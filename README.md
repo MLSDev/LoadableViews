@@ -11,7 +11,7 @@ Easiest way to load view classes into another XIB or storyboard.
 
 ![WTFCat](wtf_cat_designable.png)
 
-## Setup
+## Basic setup
 
 * Subclass your view from LoadableView
 * Create a xib file, set File's Owner class to your class
@@ -26,7 +26,7 @@ Your view is automatically loaded to different xib!
 
 ## IBInspectable && IBDesignable
 
-IBInspectables automatically render themselves if your view is IBDesignable. Usually Interface Builder is not able to automatically figure out that your view is IBInspectable, so you need to add this attribute to your view subclass:
+IBInspectables automatically render themselves if your view is IBDesignable. Usually Interface Builder is not able to automatically figure out that your view is IBDesignable, so you need to add this attribute to your view subclass:
 
 ```swift
   @IBDesignable class WTFCatView: LoadableView
@@ -38,6 +38,8 @@ IBInspectables automatically render themselves if your view is IBDesignable. Usu
 - [x] UITableViewCell
 - [x] UICollectionViewCell
 - [x] UICollectionReusableView
+
+Basically, set your UITableViewCell or UICollectionViewCell subclass in storyboard, and your storyboard will load interfaces from different xibs, and render them with IBInspectables present on your cells!
 
 ## Requirements
 
@@ -60,13 +62,13 @@ IBInspectables automatically render themselves if your view is IBDesignable. Usu
 
 ## License
 
-`LoadableView` is released under the MIT license. See LICENSE for details.
+`LoadableViews` is released under the MIT license. See LICENSE for details.
 
 ## About MLSDev
 
 [<img src="https://github.com/MLSDev/development-standards/raw/master/mlsdev-logo.png" alt="MLSDev.com">][mlsdev]
 
-`LoadableView` is maintained by MLSDev, Inc. We specialize in providing all-in-one solution in mobile and web development. Our team follows Lean principles and works according to agile methodologies to deliver the best results reducing the budget for development and its timeline.
+`LoadableViews` are maintained by MLSDev, Inc. We specialize in providing all-in-one solution in mobile and web development. Our team follows Lean principles and works according to agile methodologies to deliver the best results reducing the budget for development and its timeline.
 
 Find out more [here][mlsdev] and don't hesitate to [contact us][contact]!
 
