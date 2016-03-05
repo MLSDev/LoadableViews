@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9A4BB1C01C8AE873002B1AC9 /* LoadableViewss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4BB1B51C8AE873002B1AC9 /* LoadableViewss.framework */; };
+		9A4BB1C01C8AE873002B1AC9 /* LoadableViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4BB1B51C8AE873002B1AC9 /* LoadableViews.framework */; };
 		9A4BB1D31C8AE989002B1AC9 /* LoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4BB1D21C8AE989002B1AC9 /* LoadableView.swift */; };
 		9A4BB1D51C8AE9F7002B1AC9 /* LoadableViewTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4BB1D41C8AE9F7002B1AC9 /* LoadableViewTestCase.swift */; };
 		9A4BB1DD1C8AEEB5002B1AC9 /* iOSTestableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4BB1DC1C8AEEB5002B1AC9 /* iOSTestableView.xib */; };
@@ -15,9 +15,9 @@
 		9A4BB1F11C8B06C7002B1AC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A4BB1F01C8B06C7002B1AC9 /* Assets.xcassets */; };
 		9A4BB1F41C8B06C7002B1AC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A4BB1F21C8B06C7002B1AC9 /* LaunchScreen.storyboard */; };
 		9A4BB2081C8B0726002B1AC9 /* Example.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A4BB2071C8B0726002B1AC9 /* Example.storyboard */; };
-		9A4BB20B1C8B0732002B1AC9 /* LoadableViewss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4BB1B51C8AE873002B1AC9 /* LoadableViewss.framework */; };
-		9A4BB20C1C8B0738002B1AC9 /* LoadableViewss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4BB1B51C8AE873002B1AC9 /* LoadableViewss.framework */; };
-		9A4BB20D1C8B0738002B1AC9 /* LoadableViewss.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4BB1B51C8AE873002B1AC9 /* LoadableViewss.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9A4BB20B1C8B0732002B1AC9 /* LoadableViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4BB1B51C8AE873002B1AC9 /* LoadableViews.framework */; };
+		9A4BB20C1C8B0738002B1AC9 /* LoadableViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4BB1B51C8AE873002B1AC9 /* LoadableViews.framework */; };
+		9A4BB20D1C8B0738002B1AC9 /* LoadableViews.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4BB1B51C8AE873002B1AC9 /* LoadableViews.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9A4BB2101C8B076A002B1AC9 /* WTFCatView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4BB20F1C8B076A002B1AC9 /* WTFCatView.xib */; };
 		9A4BB2111C8B07BE002B1AC9 /* WTFCatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4BB1E21C8B06B4002B1AC9 /* WTFCatView.swift */; };
 		9A6C23861C8B1B190004F507 /* FooCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C23841C8B1B190004F507 /* FooCell.swift */; };
@@ -48,7 +48,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9A4BB20D1C8B0738002B1AC9 /* LoadableViewss.framework in Embed Frameworks */,
+				9A4BB20D1C8B0738002B1AC9 /* LoadableViews.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,7 +56,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9A4BB1B51C8AE873002B1AC9 /* LoadableViewss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadableViewss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A4BB1B51C8AE873002B1AC9 /* LoadableViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadableViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A4BB1BF1C8AE873002B1AC9 /* LoadableViewss.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoadableViewss.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A4BB1CF1C8AE93E002B1AC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
 		9A4BB1D01C8AE93E002B1AC9 /* Tests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Tests.plist; path = "Supporting Files/Tests.plist"; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A4BB1C01C8AE873002B1AC9 /* LoadableViewss.framework in Frameworks */,
+				9A4BB1C01C8AE873002B1AC9 /* LoadableViews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,8 +98,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A4BB20B1C8B0732002B1AC9 /* LoadableViewss.framework in Frameworks */,
-				9A4BB20C1C8B0738002B1AC9 /* LoadableViewss.framework in Frameworks */,
+				9A4BB20B1C8B0732002B1AC9 /* LoadableViews.framework in Frameworks */,
+				9A4BB20C1C8B0738002B1AC9 /* LoadableViews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +120,7 @@
 		9A4BB1B61C8AE873002B1AC9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9A4BB1B51C8AE873002B1AC9 /* LoadableViewss.framework */,
+				9A4BB1B51C8AE873002B1AC9 /* LoadableViews.framework */,
 				9A4BB1BF1C8AE873002B1AC9 /* LoadableViewss.xctest */,
 				9A4BB1E71C8B06C7002B1AC9 /* Example.app */,
 			);
@@ -208,7 +208,7 @@
 			);
 			name = LoadableViews;
 			productName = LoadableView;
-			productReference = 9A4BB1B51C8AE873002B1AC9 /* LoadableViewss.framework */;
+			productReference = 9A4BB1B51C8AE873002B1AC9 /* LoadableViews.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9A4BB1BE1C8AE873002B1AC9 /* LoadableViewsTests */ = {
@@ -473,7 +473,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MLSDev.LoadableView;
-				PRODUCT_NAME = LoadableViewss;
+				PRODUCT_NAME = LoadableViews;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -492,7 +492,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MLSDev.LoadableView;
-				PRODUCT_NAME = LoadableViewss;
+				PRODUCT_NAME = LoadableViews;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
