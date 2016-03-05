@@ -40,5 +40,5 @@ test-carthage:
 	ls Carthage/build/tvOS/LoadableView.framework
 
 test-coverage:
-	  set -o pipefail && xcodebuild -project LoadableView.xcodeproj -scheme LoadableView -enableCodeCoverage YES test | xcpretty -ct
+	  set -o pipefail && xcodebuild -project LoadableView.xcodeproj -scheme LoadableView -enableCodeCoverage YES -destination "name=iPhone 6s" test | xcpretty -ct
 		bash <(curl -s https://codecov.io/bash)
