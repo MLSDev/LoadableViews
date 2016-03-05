@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:LoadableView.xcodeproj">
+      location = "self:/Users/Denys/Projects/LoadableView/LoadableViews.xcodeproj">
    </FileRef>
 </Workspace>

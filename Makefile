@@ -19,8 +19,8 @@ install-coverage:
 test-iOS:
 	set -o pipefail && \
 		xcodebuild \
-		-project LoadableView.xcodeproj \
-		-scheme LoadableView \
+		-project LoadableViews.xcodeproj \
+		-scheme LoadableViews \
 		-destination "name=iPhone 6s" \
 		clean test \
 		| xcpretty -ct
@@ -28,17 +28,17 @@ test-iOS:
 test-tvOS:
 	set -o pipefail && \
 		xcodebuild \
-		-project LoadableView.xcodeproj \
-		-scheme LoadableView \
+		-project LoadableViews.xcodeproj \
+		-scheme LoadableViews \
 		-destination "name=Apple TV 1080p" \
 		clean test \
 		| xcpretty -ct
 
 test-carthage:
 	carthage build --no-skip-current
-	ls Carthage/build/iOS/LoadableView.framework
-	ls Carthage/build/tvOS/LoadableView.framework
+	ls Carthage/build/iOS/LoadableViews.framework
+	ls Carthage/build/tvOS/LoadableViews.framework
 
 test-coverage:
-	  set -o pipefail && xcodebuild -project LoadableView.xcodeproj -scheme LoadableView -enableCodeCoverage YES -destination "name=iPhone 6s" test | xcpretty -ct
+	  set -o pipefail && xcodebuild -project LoadableViews.xcodeproj -scheme LoadableViews -enableCodeCoverage YES -destination "name=iPhone 6s" test | xcpretty -ct
 		bash <(curl -s https://codecov.io/bash)

@@ -56,7 +56,6 @@ extension NibLoadableProtocol {
     }
 }
 
-@IBDesignable
 public class LoadableView: UIView, NibLoadableProtocol {
 
     public override init(frame: CGRect) {
@@ -70,8 +69,7 @@ public class LoadableView: UIView, NibLoadableProtocol {
     }
 }
 
-@IBDesignable
-public class NibLoadableTableViewCell: UITableViewCell, NibLoadableProtocol {
+public class LoadableTableViewCell: UITableViewCell, NibLoadableProtocol {
     public override var nibContainerView: UIView {
         return contentView
     }
@@ -87,9 +85,7 @@ public class NibLoadableTableViewCell: UITableViewCell, NibLoadableProtocol {
     }
 }
 
-
-@IBDesignable
-public class NibLoadableCollectionReusableView: UICollectionReusableView, NibLoadableProtocol {
+public class LoadableCollectionReusableView: UICollectionReusableView, NibLoadableProtocol {
     
     override public init(frame: CGRect) {
         super.init(frame: frame)
@@ -102,8 +98,7 @@ public class NibLoadableCollectionReusableView: UICollectionReusableView, NibLoa
     }
 }
 
-@IBDesignable
-public class NibLoadableCollectionViewCell: UICollectionViewCell, NibLoadableProtocol {
+public class LoadableCollectionViewCell: UICollectionViewCell, NibLoadableProtocol {
     public override var nibContainerView: UIView {
         return contentView
     }

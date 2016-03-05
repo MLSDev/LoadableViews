@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import LoadableView
+import LoadableViews
 
 @IBDesignable class WTFCatView: LoadableView {
 

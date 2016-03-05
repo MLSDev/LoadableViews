@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -41,6 +42,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="drI-t0-dfn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-280" y="294"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TG6-5U-FCQ">
+            <objects>
+                <viewController storyboardIdentifier="Fooo" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3C7-QK-5Mh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zyf-hP-NMm"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Jg-Nd-p4s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qnu-dB-VEx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1cm-R3-5p2">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="EVR-vI-g9h">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FooCell" id="git-VA-Pa5" customClass="FooCell" customModule="Example" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1cm-R3-5p2" firstAttribute="top" secondItem="zyf-hP-NMm" secondAttribute="bottom" id="1Or-2O-1DP"/>
+                            <constraint firstItem="1cm-R3-5p2" firstAttribute="leading" secondItem="qnu-dB-VEx" secondAttribute="leadingMargin" id="J5o-sw-wRq"/>
+                            <constraint firstItem="8Jg-Nd-p4s" firstAttribute="top" secondItem="1cm-R3-5p2" secondAttribute="bottom" id="MrI-yH-oIW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1cm-R3-5p2" secondAttribute="trailing" id="sdw-VL-p8u"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="95E-Cv-Wxy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-339" y="991"/>
         </scene>
     </scenes>
 </document>

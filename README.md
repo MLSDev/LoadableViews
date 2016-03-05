@@ -39,12 +39,46 @@ IBInspectables automatically render themselves if your view is IBDesignable. Usu
 - [x] UICollectionViewCell
 - [x] UICollectionReusableView
 
-Basically, set your UITableViewCell or UICollectionViewCell subclass in storyboard, and your storyboard will load interfaces from different xibs, and render them with IBInspectables present on your cells!
+To use loading from xibs, for example for UICollectionViewCells, drop UIView instead of UICollectionViewCell in InterfaceBuilder, and follow basic setup. Then, on your storyboard, set a class of your cell, and it will be automatically updated.
+
+## Customization
+
+* Change xib name
+
+```swift
+class CustomView : LoadableView {
+  override var nibName : String {
+    return "MyCustomXibName"
+  }
+}
+```
+
+* Change view container
+
+```swift
+  class CustomViewWithLoadableContainerView : LoadableView {
+    override var nibContainerView : UIView {
+      return containerView
+    }
+  }
+```
+
+## Making your custom views loadable
+
+* Adopt `NibLoadableProtocol` on your custom `UIView` subclass.
+* Override `nibName` and `nibContainerView` properties, if necessary.
+* Call `setupNib` method in both `init(frame:)` and `init(coder:)` methods.
+
+## Known issues
+
+* `IBDesignable` attribute is not recognized when it's inside framework due to bundle paths, which is why in current version you need to add `IBDesignable` attribute to your views manually
+* `UITableViewCell` and therefore `LoadableTableViewCell` cannot be made `IBDesignable`, because InterfaceBuilder uses `initWithFrame(_:)` method to render views, [radar](http://www.openradar.me/19901337), [stack overflow](http://stackoverflow.com/questions/26197582/is-there-a-way-for-interface-builder-to-render-ibdesignable-views-which-dont-ov)
 
 ## Requirements
 
 * iOS 8+
 * tvOS 9.0+
+* Swift 2.1+
 
 ## Installation
 

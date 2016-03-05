@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9A4BB1B41C8AE873002B1AC9"
-               BuildableName = "LoadableView.framework"
-               BlueprintName = "LoadableView"
-               ReferencedContainer = "container:LoadableView.xcodeproj">
+               BuildableName = "LoadableViewss.framework"
+               BlueprintName = "LoadableViewss"
+               ReferencedContainer = "container:LoadableViews.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,29 +26,9 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9A4BB1BE1C8AE873002B1AC9"
-               BuildableName = "LoadableViewTests.xctest"
-               BlueprintName = "LoadableViewTests"
-               ReferencedContainer = "container:LoadableView.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9A4BB1B41C8AE873002B1AC9"
-            BuildableName = "LoadableView.framework"
-            BlueprintName = "LoadableView"
-            ReferencedContainer = "container:LoadableView.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -66,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9A4BB1B41C8AE873002B1AC9"
-            BuildableName = "LoadableView.framework"
-            BlueprintName = "LoadableView"
-            ReferencedContainer = "container:LoadableView.xcodeproj">
+            BuildableName = "LoadableViewss.framework"
+            BlueprintName = "LoadableViewss"
+            ReferencedContainer = "container:LoadableViews.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -84,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9A4BB1B41C8AE873002B1AC9"
-            BuildableName = "LoadableView.framework"
-            BlueprintName = "LoadableView"
-            ReferencedContainer = "container:LoadableView.xcodeproj">
+            BuildableName = "LoadableViewss.framework"
+            BlueprintName = "LoadableViewss"
+            ReferencedContainer = "container:LoadableViews.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
