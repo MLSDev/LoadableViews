@@ -115,9 +115,6 @@ public class LoadableCollectionViewCell: UICollectionViewCell, NibLoadableProtoc
 }
 
 public class LoadableTextField: UITextField, NibLoadableProtocol {
-    public override var nibContainerView: UIView {
-        return self
-    }
     
     override public init(frame: CGRect) {
         super.init(frame: frame)
