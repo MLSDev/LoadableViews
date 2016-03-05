@@ -13,7 +13,7 @@ Easiest way to load view classes into another XIB or storyboard.
 
 ## Basic setup
 
-* Subclass your view from LoadableView
+* Subclass your view from `LoadableView`
 * Create a xib file, set File's Owner class to your class
 * Link outlets as usual
 
@@ -72,7 +72,7 @@ class CustomView : LoadableView {
 ## Known issues
 
 * `IBDesignable` attribute is not recognized when it's inside framework due to bundle paths, which is why in current version you need to add `IBDesignable` attribute to your views manually
-* `UITableViewCell` and therefore `LoadableTableViewCell` cannot be made `IBDesignable`, because InterfaceBuilder uses `initWithFrame(_:)` method to render views, [radar](http://www.openradar.me/19901337), [stack overflow](http://stackoverflow.com/questions/26197582/is-there-a-way-for-interface-builder-to-render-ibdesignable-views-which-dont-ov)
+* `UITableViewCell` and therefore `LoadableTableViewCell` cannot be made `IBDesignable`, because InterfaceBuilder uses `initWithFrame(_:)` method to render views: [radar](http://www.openradar.me/19901337), [stack overflow](http://stackoverflow.com/questions/26197582/is-there-a-way-for-interface-builder-to-render-ibdesignable-views-which-dont-ov)
 
 ## Requirements
 
