@@ -138,7 +138,6 @@
 		9A4BB1C31C8AE873002B1AC9 /* LoadableViewTests */ = {
 			isa = PBXGroup;
 			children = (
-				9A4BB1D91C8AEDF7002B1AC9 /* Fixtures */,
 				9A4BB1D41C8AE9F7002B1AC9 /* LoadableViewTestCase.swift */,
 				9A4BB1DC1C8AEEB5002B1AC9 /* iOSTestableView.xib */,
 			);
@@ -155,13 +154,6 @@
 				9A4BB1D01C8AE93E002B1AC9 /* Tests.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9A4BB1D91C8AEDF7002B1AC9 /* Fixtures */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Fixtures;
 			sourceTree = "<group>";
 		};
 		9A4BB1E81C8B06C7002B1AC9 /* Example */ = {
