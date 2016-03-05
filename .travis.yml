@@ -6,7 +6,7 @@ matrix:
       env: ACTION=tvOS
     - os: osx
       env: ACTION=carthage
-    - os: osx
+    - os: ios
       env: ACTION=coverage
 
 language: objective-c
