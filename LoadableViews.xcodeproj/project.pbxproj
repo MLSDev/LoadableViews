@@ -193,9 +193,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		9A4BB1B41C8AE873002B1AC9 /* LoadableViewss */ = {
+		9A4BB1B41C8AE873002B1AC9 /* LoadableViews */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9A4BB1C91C8AE873002B1AC9 /* Build configuration list for PBXNativeTarget "LoadableViewss" */;
+			buildConfigurationList = 9A4BB1C91C8AE873002B1AC9 /* Build configuration list for PBXNativeTarget "LoadableViews" */;
 			buildPhases = (
 				9A4BB1B01C8AE873002B1AC9 /* Sources */,
 				9A4BB1B11C8AE873002B1AC9 /* Frameworks */,
@@ -206,7 +206,7 @@
 			);
 			dependencies = (
 			);
-			name = LoadableViewss;
+			name = LoadableViews;
 			productName = LoadableView;
 			productReference = 9A4BB1B51C8AE873002B1AC9 /* LoadableViewss.framework */;
 			productType = "com.apple.product-type.framework";
@@ -282,7 +282,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9A4BB1B41C8AE873002B1AC9 /* LoadableViewss */,
+				9A4BB1B41C8AE873002B1AC9 /* LoadableViews */,
 				9A4BB1BE1C8AE873002B1AC9 /* LoadableViewsTests */,
 				9A4BB1E61C8B06C7002B1AC9 /* Example */,
 			);
@@ -351,12 +351,12 @@
 /* Begin PBXTargetDependency section */
 		9A4BB1C21C8AE873002B1AC9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9A4BB1B41C8AE873002B1AC9 /* LoadableViewss */;
+			target = 9A4BB1B41C8AE873002B1AC9 /* LoadableViews */;
 			targetProxy = 9A4BB1C11C8AE873002B1AC9 /* PBXContainerItemProxy */;
 		};
 		9A4BB20A1C8B072E002B1AC9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9A4BB1B41C8AE873002B1AC9 /* LoadableViewss */;
+			target = 9A4BB1B41C8AE873002B1AC9 /* LoadableViews */;
 			targetProxy = 9A4BB2091C8B072E002B1AC9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -560,7 +560,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9A4BB1C91C8AE873002B1AC9 /* Build configuration list for PBXNativeTarget "LoadableViewss" */ = {
+		9A4BB1C91C8AE873002B1AC9 /* Build configuration list for PBXNativeTarget "LoadableViews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9A4BB1CA1C8AE873002B1AC9 /* Debug */,
