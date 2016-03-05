@@ -38,12 +38,13 @@ IBInspectables automatically render themselves if your view is IBDesignable. Usu
 - [x] UITableViewCell
 - [x] UICollectionViewCell
 - [x] UICollectionReusableView
+- [x] UITextField
 
 To use loading from xibs, for example for UICollectionViewCells, drop UIView instead of UICollectionViewCell in InterfaceBuilder, and follow basic setup. Then, on your storyboard, set a class of your cell, and it will be automatically updated.
 
 ## Customization
 
-* Change xib name
+Change xib name
 
 ```swift
 class CustomView : LoadableView {
@@ -53,7 +54,7 @@ class CustomView : LoadableView {
 }
 ```
 
-* Change view container
+Change view container
 
 ```swift
   class CustomViewWithLoadableContainerView : LoadableView {
@@ -71,8 +72,9 @@ class CustomView : LoadableView {
 
 ## Known issues
 
-* `IBDesignable` attribute is not recognized when it's inside framework due to bundle paths, which is why in current version you need to add `IBDesignable` attribute to your views manually
+* `IBDesignable` attribute is not recognized when it's inside framework due to bundle paths, which is why in current version you need to add `IBDesignable` attribute to your views manually.
 * `UITableViewCell` and therefore `LoadableTableViewCell` cannot be made `IBDesignable`, because InterfaceBuilder uses `initWithFrame(_:)` method to render views: [radar](http://www.openradar.me/19901337), [stack overflow](http://stackoverflow.com/questions/26197582/is-there-a-way-for-interface-builder-to-render-ibdesignable-views-which-dont-ov)
+* `UIScrollView` subclasses such as `UITextView` don't behave well with loadable views being inserted, which is why `UITextView` loadable subclass is not included in current release, but may be implemented in the future.
 
 ## Requirements
 

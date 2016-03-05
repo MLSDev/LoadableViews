@@ -113,3 +113,19 @@ public class LoadableCollectionViewCell: UICollectionViewCell, NibLoadableProtoc
         setupNib()
     }
 }
+
+public class LoadableTextField: UITextField, NibLoadableProtocol {
+    public override var nibContainerView: UIView {
+        return self
+    }
+    
+    override public init(frame: CGRect) {
+        super.init(frame: frame)
+        setupNib()
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setupNib()
+    }
+}
