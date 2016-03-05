@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Yul-OD-fgm">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ixh-Mm-8JO">
+            <objects>
+                <viewController id="Yul-OD-fgm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rLj-4R-p6R"/>
+                        <viewControllerLayoutGuide type="bottom" id="RJa-EI-o4f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VOg-Jy-aem">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HNX-Ij-lK1" customClass="WTFCatView" customModule="Example" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="102" width="320" height="276"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="catBackgroundColor">
+                                        <color key="value" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="HNX-Ij-lK1" firstAttribute="centerY" secondItem="VOg-Jy-aem" secondAttribute="centerY" id="7UC-fF-zcG"/>
+                            <constraint firstItem="HNX-Ij-lK1" firstAttribute="centerX" secondItem="VOg-Jy-aem" secondAttribute="centerX" id="8O3-Wl-DfO"/>
+                            <constraint firstItem="HNX-Ij-lK1" firstAttribute="leading" secondItem="VOg-Jy-aem" secondAttribute="leading" id="MEb-WZ-BjL"/>
+                            <constraint firstAttribute="trailing" secondItem="HNX-Ij-lK1" secondAttribute="trailing" id="zsR-rr-Wt8"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="drI-t0-dfn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-280" y="294"/>
+        </scene>
+    </scenes>
+</document>

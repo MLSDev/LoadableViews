@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wtf_cat" translatesAutoresizingMaskIntoConstraints="NO" id="sCE-9Z-4Tc">
+                    <rect key="frame" x="20" y="20" width="560" height="560"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="sCE-9Z-4Tc" secondAttribute="bottom" constant="20" id="cXp-Vg-RCY"/>
+                <constraint firstItem="sCE-9Z-4Tc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="iKD-ta-TjJ"/>
+                <constraint firstItem="sCE-9Z-4Tc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="r8s-YD-1mw"/>
+                <constraint firstAttribute="trailing" secondItem="sCE-9Z-4Tc" secondAttribute="trailing" constant="20" id="z3m-zr-43o"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="wtf_cat" width="315" height="236"/>
+    </resources>
+</document>

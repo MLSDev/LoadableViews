@@ -26,41 +26,95 @@
 import Foundation
 import UIKit
 
-public protocol NibDefinable {
-    var nibName: String { get }
+public protocol NibLoadableProtocol : NSObjectProtocol {
+    var nibContainerView: UIView { get }
+    func loadNib() -> UIView
+    var nibName : String { get }
 }
 
-extension NibDefinable {
-    public var nibName : String {
-        return String(self.dynamicType)
-    }
+extension UIView {
+    public var nibContainerView : UIView { return self }
+    public var nibName : String { return String(self.dynamicType) }
 }
 
-@IBDesignable public class LoadableView: UIView, NibDefinable {
-
-    @IBOutlet public weak var view : UIView!
-
-    public override init(frame: CGRect) {
-        super.init(frame: frame)
-        xibSetup()
-    }
-
-    public required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        xibSetup()
-    }
-
-    public func xibSetup() {
-        view = loadViewFromXib()
-        view.frame = bounds
-        view.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
-        addSubview(view)
-    }
-
-    func loadViewFromXib() -> UIView {
+extension NibLoadableProtocol {
+    public func loadNib() -> UIView {
         let bundle = NSBundle(forClass: self.dynamicType)
         let nib = UINib(nibName: nibName, bundle: bundle)
         let view = nib.instantiateWithOwner(self, options: nil).first as! UIView
         return view
+    }
+    
+    func setupNib() {
+        let view = loadNib()
+        nibContainerView.backgroundColor = .clearColor()
+        nibContainerView.addSubview(view)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        let bindings = ["view": view]
+        nibContainerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[view]|", options:[], metrics:nil, views: bindings))
+        nibContainerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[view]|", options:[], metrics:nil, views: bindings))
+    }
+}
+
+@IBDesignable
+public class LoadableView: UIView, NibLoadableProtocol {
+
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupNib()
+    }
+
+    public required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setupNib()
+    }
+}
+
+@IBDesignable
+public class NibLoadableTableViewCell: UITableViewCell, NibLoadableProtocol {
+    public override var nibContainerView: UIView {
+        return contentView
+    }
+    
+    override public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        setupNib()
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setupNib()
+    }
+}
+
+
+@IBDesignable
+public class NibLoadableCollectionReusableView: UICollectionReusableView, NibLoadableProtocol {
+    
+    override public init(frame: CGRect) {
+        super.init(frame: frame)
+        setupNib()
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setupNib()
+    }
+}
+
+@IBDesignable
+public class NibLoadableCollectionViewCell: UICollectionViewCell, NibLoadableProtocol {
+    public override var nibContainerView: UIView {
+        return contentView
+    }
+    
+    override public init(frame: CGRect) {
+        super.init(frame: frame)
+        setupNib()
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setupNib()
     }
 }
