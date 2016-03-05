@@ -45,7 +45,7 @@ extension NibLoadableProtocol {
         return view
     }
     
-    func setupNib() {
+    public func setupNib() {
         let view = loadNib()
         nibContainerView.backgroundColor = .clearColor()
         nibContainerView.addSubview(view)
