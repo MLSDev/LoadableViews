@@ -34,11 +34,11 @@ IBInspectables automatically render themselves if your view is IBDesignable. Usu
 
 ## UI classes supported
 
-- [x] UIView
-- [x] UITableViewCell
-- [x] UICollectionViewCell
-- [x] UICollectionReusableView
-- [x] UITextField
+- [x] UIView - `LoadableView`
+- [x] UITableViewCell - `LoadableTableViewCell`
+- [x] UICollectionViewCell - `LoadableCollectionViewCell`
+- [x] UICollectionReusableView - `LoadableCollectionReusableView`
+- [x] UITextField - `LoadableTextField`
 
 To use loading from xibs, for example for UICollectionViewCells, drop UIView instead of UICollectionViewCell in InterfaceBuilder, and follow basic setup. Then, on your storyboard, set a class of your cell, and it will be automatically updated.
 
