@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import LoadableView
+import LoadableViews
 
 class iOSTestableView : LoadableView {
     @IBOutlet var label : UILabel!
