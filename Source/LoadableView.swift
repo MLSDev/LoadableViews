@@ -26,18 +26,33 @@
 import Foundation
 import UIKit
 
+/// Protocol to define family of loadable views
 public protocol NibLoadableProtocol : NSObjectProtocol {
+    
+    /// View that serves as a container for loadable view. Loadable views are added to container view in `setupNib(_:)` method.
     var nibContainerView: UIView { get }
+    
+    /// Method that loads view from single view xib with `nibName`.
+    ///
+    /// - returns: loaded from xib view
     func loadNib() -> UIView
+    
+    /// Name of .xib file to load view from.
     var nibName : String { get }
 }
 
 extension UIView {
+    /// View usually serves itself as a default container for loadable views
     public var nibContainerView : UIView { return self }
+    
+    /// Default nibName for all UIViews, equal to name of the class.
     public var nibName : String { return String(self.dynamicType) }
 }
 
 extension NibLoadableProtocol {
+    /// Method that loads view from single view xib with `nibName`.
+    ///
+    /// - returns: loaded from xib view
     public func loadNib() -> UIView {
         let bundle = NSBundle(forClass: self.dynamicType)
         let nib = UINib(nibName: nibName, bundle: bundle)
@@ -45,6 +60,7 @@ extension NibLoadableProtocol {
         return view
     }
     
+    /// Method that is used to load and configure loadableView. It is then added to `nibContainerView` as a subview. This view receives constraints of same width and height as container view.
     public func setupNib() {
         let view = loadNib()
         nibContainerView.backgroundColor = .clearColor()
@@ -56,6 +72,7 @@ extension NibLoadableProtocol {
     }
 }
 
+/// UIView subclass, that can be loaded into different xib or storyboard by simply referencing it's class.
 public class LoadableView: UIView, NibLoadableProtocol {
 
     public override init(frame: CGRect) {
@@ -69,6 +86,7 @@ public class LoadableView: UIView, NibLoadableProtocol {
     }
 }
 
+/// UITableViewCell subclass, which subview can be used as a container to loadable view. By default, xib with the same name is loaded and added as a subview to cell's contentView.
 public class LoadableTableViewCell: UITableViewCell, NibLoadableProtocol {
     public override var nibContainerView: UIView {
         return contentView
@@ -85,8 +103,8 @@ public class LoadableTableViewCell: UITableViewCell, NibLoadableProtocol {
     }
 }
 
+/// UICollectionReusableView subclass, which subview can be used as a container to loadable view. By default, xib with the same name is loaded and added as a subview.
 public class LoadableCollectionReusableView: UICollectionReusableView, NibLoadableProtocol {
-    
     override public init(frame: CGRect) {
         super.init(frame: frame)
         setupNib()
@@ -98,6 +116,7 @@ public class LoadableCollectionReusableView: UICollectionReusableView, NibLoadab
     }
 }
 
+/// UICollectionViewCell subclass, which subview can be used as a container to loadable view. By default, xib with the same name is loaded and added as a subview to cell's contentView.
 public class LoadableCollectionViewCell: UICollectionViewCell, NibLoadableProtocol {
     public override var nibContainerView: UIView {
         return contentView
@@ -114,6 +133,7 @@ public class LoadableCollectionViewCell: UICollectionViewCell, NibLoadableProtoc
     }
 }
 
+/// UITextField subclass, which subview can be used as a container to loadable view. By default, xib with the same name is loaded and added as a subview.
 public class LoadableTextField: UITextField, NibLoadableProtocol {
     
     override public init(frame: CGRect) {
