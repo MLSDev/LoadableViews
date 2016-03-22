@@ -36,3 +36,19 @@ class LoadableViewTestCase: XCTestCase {
     }
 }
 
+class LoadableViewSetupNibTestCase : XCTestCase {
+    
+    class OverridedView : LoadableView {
+        var overrided: Bool = false
+        
+        override func setupNib() {
+            super.setupNib()
+            overrided = true
+        }
+    }
+    
+    func testThatSetupNibCanBeOverridedInLoadableViewSubclass() {
+        XCTAssert(OverridedView().overrided)
+    }
+}
+

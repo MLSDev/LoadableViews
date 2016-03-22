@@ -37,6 +37,9 @@ public protocol NibLoadableProtocol : NSObjectProtocol {
     /// - returns: loaded from xib view
     func loadNib() -> UIView
     
+    /// Method that is used to load and configure loadableView. It is then added to `nibContainerView` as a subview. This view receives constraints of same width and height as container view.
+    func setupNib()
+    
     /// Name of .xib file to load view from.
     var nibName : String { get }
 }
@@ -60,15 +63,13 @@ extension NibLoadableProtocol {
         return view
     }
     
-    /// Method that is used to load and configure loadableView. It is then added to `nibContainerView` as a subview. This view receives constraints of same width and height as container view.
-    public func setupNib() {
-        let view = loadNib()
-        nibContainerView.backgroundColor = .clearColor()
-        nibContainerView.addSubview(view)
+    internal func setupView(view: UIView, inContainer container: UIView) {
+        container.backgroundColor = .clearColor()
+        container.addSubview(view)
         view.translatesAutoresizingMaskIntoConstraints = false
         let bindings = ["view": view]
-        nibContainerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[view]|", options:[], metrics:nil, views: bindings))
-        nibContainerView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[view]|", options:[], metrics:nil, views: bindings))
+        container.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[view]|", options:[], metrics:nil, views: bindings))
+        container.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[view]|", options:[], metrics:nil, views: bindings))
     }
 }
 
@@ -83,6 +84,10 @@ public class LoadableView: UIView, NibLoadableProtocol {
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupNib()
+    }
+    
+    public func setupNib() {
+        setupView(loadNib(), inContainer: nibContainerView)
     }
 }
 
@@ -101,6 +106,10 @@ public class LoadableTableViewCell: UITableViewCell, NibLoadableProtocol {
         super.init(coder: aDecoder)
         setupNib()
     }
+    
+    public func setupNib() {
+        setupView(loadNib(), inContainer: nibContainerView)
+    }
 }
 
 /// UICollectionReusableView subclass, which subview can be used as a container to loadable view. By default, xib with the same name is loaded and added as a subview.
@@ -113,6 +122,10 @@ public class LoadableCollectionReusableView: UICollectionReusableView, NibLoadab
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupNib()
+    }
+    
+    public func setupNib() {
+        setupView(loadNib(), inContainer: nibContainerView)
     }
 }
 
@@ -131,6 +144,10 @@ public class LoadableCollectionViewCell: UICollectionViewCell, NibLoadableProtoc
         super.init(coder: aDecoder)
         setupNib()
     }
+    
+    public func setupNib() {
+        setupView(loadNib(), inContainer: nibContainerView)
+    }
 }
 
 /// UITextField subclass, which subview can be used as a container to loadable view. By default, xib with the same name is loaded and added as a subview.
@@ -144,5 +161,9 @@ public class LoadableTextField: UITextField, NibLoadableProtocol {
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupNib()
+    }
+    
+    public func setupNib() {
+        setupView(loadNib(), inContainer: nibContainerView)
     }
 }

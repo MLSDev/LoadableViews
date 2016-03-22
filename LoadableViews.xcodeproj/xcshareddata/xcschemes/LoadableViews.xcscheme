@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9A4BB1B41C8AE873002B1AC9"
-               BuildableName = "LoadableViewss.framework"
+               BuildableName = "LoadableViews.framework"
                BlueprintName = "LoadableViews"
                ReferencedContainer = "container:LoadableViews.xcodeproj">
             </BuildableReference>
@@ -44,7 +44,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9A4BB1B41C8AE873002B1AC9"
-            BuildableName = "LoadableViewss.framework"
+            BuildableName = "LoadableViews.framework"
             BlueprintName = "LoadableViews"
             ReferencedContainer = "container:LoadableViews.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9A4BB1B41C8AE873002B1AC9"
-            BuildableName = "LoadableViewss.framework"
+            BuildableName = "LoadableViews.framework"
             BlueprintName = "LoadableViews"
             ReferencedContainer = "container:LoadableViews.xcodeproj">
          </BuildableReference>
@@ -84,7 +84,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9A4BB1B41C8AE873002B1AC9"
-            BuildableName = "LoadableViewss.framework"
+            BuildableName = "LoadableViews.framework"
             BlueprintName = "LoadableViews"
             ReferencedContainer = "container:LoadableViews.xcodeproj">
          </BuildableReference>
