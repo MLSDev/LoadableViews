@@ -16,7 +16,6 @@
 		9A4BB1F41C8B06C7002B1AC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A4BB1F21C8B06C7002B1AC9 /* LaunchScreen.storyboard */; };
 		9A4BB2081C8B0726002B1AC9 /* Example.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A4BB2071C8B0726002B1AC9 /* Example.storyboard */; };
 		9A4BB20B1C8B0732002B1AC9 /* LoadableViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4BB1B51C8AE873002B1AC9 /* LoadableViews.framework */; };
-		9A4BB20C1C8B0738002B1AC9 /* LoadableViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4BB1B51C8AE873002B1AC9 /* LoadableViews.framework */; };
 		9A4BB20D1C8B0738002B1AC9 /* LoadableViews.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4BB1B51C8AE873002B1AC9 /* LoadableViews.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9A4BB2101C8B076A002B1AC9 /* WTFCatView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4BB20F1C8B076A002B1AC9 /* WTFCatView.xib */; };
 		9A4BB2111C8B07BE002B1AC9 /* WTFCatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4BB1E21C8B06B4002B1AC9 /* WTFCatView.swift */; };
@@ -101,7 +100,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A4BB20B1C8B0732002B1AC9 /* LoadableViews.framework in Frameworks */,
-				9A4BB20C1C8B0738002B1AC9 /* LoadableViews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +248,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Denys Telezhkin";
 				TargetAttributes = {
 					9A4BB1B41C8AE873002B1AC9 = {
@@ -460,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9A4BB1D71C8AEA1D002B1AC9 /* UniversalFramework_Framework.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -479,6 +478,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9A4BB1D71C8AEA1D002B1AC9 /* UniversalFramework_Framework.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
