@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [2.0.0](https://github.com/MLSDev/LoadableViews/releases/tag/2.0.0)
+
+Swift 3 release!
+
 ## [1.0.1](https://github.com/MLSDev/LoadableViews/releases/tag/1.0.1)
 
 # Changed
