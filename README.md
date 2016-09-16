@@ -78,20 +78,20 @@ Change view container
 
 * iOS 8+
 * tvOS 9.0+
-* Swift 2.1+
+* Swift 3.0
 
 ## Installation
 
 #### CocoaPods
 
 ```ruby
-  pod 'LoadableViews', '~> 1.0.0'
+  pod 'LoadableViews', '~> 2.0.0'
 ```
 
 #### Carthage
 
 ```ruby
-  carthage 'MLSDev/LoadableViews' "1.0.0"
+  carthage 'MLSDev/LoadableViews' "2.0.0"
 ```
 
 ## License
