@@ -63,7 +63,7 @@ extension NibLoadableProtocol {
         return view
     }
     
-    internal func setupView(_ view: UIView, inContainer container: UIView) {
+    public func setupView(_ view: UIView, inContainer container: UIView) {
         container.backgroundColor = .clear
         container.addSubview(view)
         view.translatesAutoresizingMaskIntoConstraints = false
