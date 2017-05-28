@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A148DBD1EDB2924002E610C /* iOSTestableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A148DBB1EDB2924002E610C /* iOSTestableView.xib */; };
+		9A148DBE1EDB2924002E610C /* OverridedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A148DBC1EDB2924002E610C /* OverridedView.xib */; };
+		9A148DC01EDB292A002E610C /* LoadableViewTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A148DBF1EDB292A002E610C /* LoadableViewTestCase.swift */; };
 		9A4BB1C01C8AE873002B1AC9 /* LoadableViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4BB1B51C8AE873002B1AC9 /* LoadableViews.framework */; };
 		9A4BB1D31C8AE989002B1AC9 /* LoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4BB1D21C8AE989002B1AC9 /* LoadableView.swift */; };
-		9A4BB1D51C8AE9F7002B1AC9 /* LoadableViewTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4BB1D41C8AE9F7002B1AC9 /* LoadableViewTestCase.swift */; };
-		9A4BB1DD1C8AEEB5002B1AC9 /* iOSTestableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4BB1DC1C8AEEB5002B1AC9 /* iOSTestableView.xib */; };
 		9A4BB1EA1C8B06C7002B1AC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4BB1E91C8B06C7002B1AC9 /* AppDelegate.swift */; };
 		9A4BB1F11C8B06C7002B1AC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A4BB1F01C8B06C7002B1AC9 /* Assets.xcassets */; };
 		9A4BB1F41C8B06C7002B1AC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A4BB1F21C8B06C7002B1AC9 /* LaunchScreen.storyboard */; };
@@ -21,7 +22,6 @@
 		9A4BB2111C8B07BE002B1AC9 /* WTFCatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4BB1E21C8B06B4002B1AC9 /* WTFCatView.swift */; };
 		9A6C23861C8B1B190004F507 /* FooCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C23841C8B1B190004F507 /* FooCell.swift */; };
 		9A6C23871C8B1B190004F507 /* FooCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A6C23851C8B1B190004F507 /* FooCell.xib */; };
-		9AE1B1891CA184C300AE555F /* OverridedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AE1B1881CA184C300AE555F /* OverridedView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,16 +56,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9A148DBB1EDB2924002E610C /* iOSTestableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iOSTestableView.xib; path = TestFixtures/iOSTestableView.xib; sourceTree = SOURCE_ROOT; };
+		9A148DBC1EDB2924002E610C /* OverridedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OverridedView.xib; path = TestFixtures/OverridedView.xib; sourceTree = SOURCE_ROOT; };
+		9A148DBF1EDB292A002E610C /* LoadableViewTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadableViewTestCase.swift; path = Tests/LoadableViewsTests/LoadableViewTestCase.swift; sourceTree = SOURCE_ROOT; };
 		9A4BB1B51C8AE873002B1AC9 /* LoadableViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadableViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A4BB1BF1C8AE873002B1AC9 /* LoadableViewss.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoadableViewss.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A4BB1CF1C8AE93E002B1AC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
 		9A4BB1D01C8AE93E002B1AC9 /* Tests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Tests.plist; path = "Supporting Files/Tests.plist"; sourceTree = "<group>"; };
 		9A4BB1D21C8AE989002B1AC9 /* LoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadableView.swift; path = Source/LoadableView.swift; sourceTree = SOURCE_ROOT; };
-		9A4BB1D41C8AE9F7002B1AC9 /* LoadableViewTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadableViewTestCase.swift; path = Tests/LoadableViewTestCase.swift; sourceTree = SOURCE_ROOT; };
 		9A4BB1D61C8AEA1D002B1AC9 /* UniversalFramework_Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = UniversalFramework_Base.xcconfig; path = "Supporting Files/UniversalFramework_Base.xcconfig"; sourceTree = "<group>"; };
 		9A4BB1D71C8AEA1D002B1AC9 /* UniversalFramework_Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = UniversalFramework_Framework.xcconfig; path = "Supporting Files/UniversalFramework_Framework.xcconfig"; sourceTree = "<group>"; };
 		9A4BB1D81C8AEA1D002B1AC9 /* UniversalFramework_Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = UniversalFramework_Test.xcconfig; path = "Supporting Files/UniversalFramework_Test.xcconfig"; sourceTree = "<group>"; };
-		9A4BB1DC1C8AEEB5002B1AC9 /* iOSTestableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iOSTestableView.xib; path = Tests/Fixtures/iOSTestableView.xib; sourceTree = SOURCE_ROOT; };
 		9A4BB1E21C8B06B4002B1AC9 /* WTFCatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTFCatView.swift; sourceTree = "<group>"; };
 		9A4BB1E71C8B06C7002B1AC9 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A4BB1E91C8B06C7002B1AC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,7 +77,6 @@
 		9A4BB20F1C8B076A002B1AC9 /* WTFCatView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTFCatView.xib; sourceTree = "<group>"; };
 		9A6C23841C8B1B190004F507 /* FooCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooCell.swift; sourceTree = "<group>"; };
 		9A6C23851C8B1B190004F507 /* FooCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FooCell.xib; sourceTree = "<group>"; };
-		9AE1B1881CA184C300AE555F /* OverridedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OverridedView.xib; path = Tests/Fixtures/OverridedView.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,9 +138,9 @@
 		9A4BB1C31C8AE873002B1AC9 /* LoadableViewTests */ = {
 			isa = PBXGroup;
 			children = (
-				9A4BB1D41C8AE9F7002B1AC9 /* LoadableViewTestCase.swift */,
-				9A4BB1DC1C8AEEB5002B1AC9 /* iOSTestableView.xib */,
-				9AE1B1881CA184C300AE555F /* OverridedView.xib */,
+				9A148DBB1EDB2924002E610C /* iOSTestableView.xib */,
+				9A148DBC1EDB2924002E610C /* OverridedView.xib */,
+				9A148DBF1EDB292A002E610C /* LoadableViewTestCase.swift */,
 			);
 			path = LoadableViewTests;
 			sourceTree = "<group>";
@@ -296,8 +296,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A4BB1DD1C8AEEB5002B1AC9 /* iOSTestableView.xib in Resources */,
-				9AE1B1891CA184C300AE555F /* OverridedView.xib in Resources */,
+				9A148DBD1EDB2924002E610C /* iOSTestableView.xib in Resources */,
+				9A148DBE1EDB2924002E610C /* OverridedView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A4BB1D51C8AE9F7002B1AC9 /* LoadableViewTestCase.swift in Sources */,
+				9A148DC01EDB292A002E610C /* LoadableViewTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

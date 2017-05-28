@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+# Next
+
+* Improved CI and automation scripts
+
 ## [2.0.1](https://github.com/MLSDev/LoadableViews/releases/tag/2.0.1)
 
 * Open up `NibLoadableProtocol` extension API to allow using `NibLoadableProtocol` methods with custom classes
