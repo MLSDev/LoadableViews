@@ -77,6 +77,7 @@
 		9A4BB20F1C8B076A002B1AC9 /* WTFCatView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTFCatView.xib; sourceTree = "<group>"; };
 		9A6C23841C8B1B190004F507 /* FooCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooCell.swift; sourceTree = "<group>"; };
 		9A6C23851C8B1B190004F507 /* FooCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FooCell.xib; sourceTree = "<group>"; };
+		9AD72B831EE1A09200CA2521 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +110,7 @@
 		9A4BB1AB1C8AE873002B1AC9 = {
 			isa = PBXGroup;
 			children = (
+				9AD72B821EE1A07D00CA2521 /* Documentation */,
 				9A4BB1B71C8AE873002B1AC9 /* LoadableView */,
 				9A4BB1C31C8AE873002B1AC9 /* LoadableViewTests */,
 				9A4BB1E81C8B06C7002B1AC9 /* Example */,
@@ -171,6 +173,14 @@
 				9A4BB1F51C8B06C7002B1AC9 /* Info.plist */,
 			);
 			path = Example;
+			sourceTree = "<group>";
+		};
+		9AD72B821EE1A07D00CA2521 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				9AD72B831EE1A09200CA2521 /* CHANGELOG.md */,
+			);
+			name = Documentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

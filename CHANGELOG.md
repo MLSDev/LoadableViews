@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 
 # Next
 
+* Container view no longer translates it's autoresizing mask into constraints, thus allowing self-sizing mechanics for `LoadableView`.
+
 ## [2.0.2](https://github.com/MLSDev/LoadableViews/releases/tag/2.0.2)
 
 * Improved CI and automation scripts
