@@ -46,10 +46,10 @@ public protocol NibLoadableProtocol : NSObjectProtocol {
 
 extension UIView {
     /// View usually serves itself as a default container for loadable views
-    open var nibContainerView : UIView { return self }
+    @objc dynamic open var nibContainerView : UIView { return self }
     
     /// Default nibName for all UIViews, equal to name of the class.
-    open var nibName : String { return String(describing: type(of: self)) }
+    @objc dynamic open var nibName : String { return String(describing: type(of: self)) }
 }
 
 extension NibLoadableProtocol {
