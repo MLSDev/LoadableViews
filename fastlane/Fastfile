@@ -68,13 +68,22 @@ lane :release do |params|
     puts "Pushing to CocoaPods trunk."
     sh "bundle exec pod trunk push LoadableViews.podspec --allow-warnings"
 
+    puts "Preparing Carthage binary framework."
+
+    sh "carthage build --no-skip-current"
+    sh "carthage archive LoadableViews"
+
     puts "Pushing as a GitHub Release."
     fastlane_require 'octokit'
     stripped_changelog = changelog.split(/^## /)[1].split("\n")[1..-1].join("\n").strip
-    Octokit::Client.new(netrc: true).
-      create_release('MLSDev/LoadableViews',
+    client = Octokit::Client.new(netrc: true)
+    client.create_release('MLSDev/LoadableViews',
                      version,
                      name: version,
                      body: stripped_changelog)
+
+    puts "Attaching Carthage prebuilt binary to release."
+    releases = client.releases('MLSDev/LoadableViews')
+    client.upload_asset(releases[0].url, 'LoadableViews.framework.zip')
   end
 end
