@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 
 # Next
 
+## [2.2.1](https://github.com/MLSDev/LoadableViews/releases/tag/2.2.1)
+
+* Updated for Xcode 9.1 / Swift 4.0.2
+
 ## [2.2.0](https://github.com/MLSDev/LoadableViews/releases/tag/2.2.0)
 
 * Support for Swift 3.2 and Swift 4.0
