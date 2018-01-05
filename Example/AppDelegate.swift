@@ -3,7 +3,7 @@
 //  Example
 //
 //  Created by Denys Telezhkin on 05.03.16.
-//  Copyright © 2016 Denys Telezhkin. All rights reserved.
+//  Copyright © 2018 Denys Telezhkin. All rights reserved.
 //
 
 import UIKit
@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }

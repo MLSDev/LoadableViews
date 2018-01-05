@@ -3,7 +3,7 @@
 //  LoadableView
 //
 //  Created by Denys Telezhkin on 05.03.16.
-//  Copyright © 2016 MLSDev Inc(https://mlsdev.com).
+//  Copyright © 2018 MLSDev Inc(https://mlsdev.com).
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -154,6 +154,22 @@ open class LoadableCollectionViewCell: UICollectionViewCell, NibLoadableProtocol
 /// UITextField subclass, which subview can be used as a container to loadable view. By default, xib with the same name is loaded and added as a subview.
 open class LoadableTextField: UITextField, NibLoadableProtocol {
     
+    override public init(frame: CGRect) {
+        super.init(frame: frame)
+        setupNib()
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setupNib()
+    }
+    
+    open func setupNib() {
+        setupView(loadNib(), inContainer: nibContainerView)
+    }
+}
+
+open class LoadableControl: UIControl, NibLoadableProtocol {
     override public init(frame: CGRect) {
         super.init(frame: frame)
         setupNib()

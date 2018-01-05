@@ -3,7 +3,7 @@
 //  LoadableView
 //
 //  Created by Denys Telezhkin on 05.03.16.
-//  Copyright © 2016 Denys Telezhkin. All rights reserved.
+//  Copyright © 2018 Denys Telezhkin. All rights reserved.
 //
 
 import XCTest
@@ -33,6 +33,12 @@ class LoadableViewTestCase: XCTestCase {
         let view = RenamedView()
         
         XCTAssertNotNil(view.label)
+    }
+    
+    func testLoadableControlIsSupported() {
+        let control = TextFieldView()
+        
+        XCTAssertNotNil(control.textField)
     }
 }
 

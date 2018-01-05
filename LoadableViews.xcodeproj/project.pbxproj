@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E9C31BA1FFFD9A300769D14 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9C31B91FFFD9A300769D14 /* TextFieldView.swift */; };
+		3E9C31BB1FFFD9AB00769D14 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9C31B91FFFD9A300769D14 /* TextFieldView.swift */; };
+		3E9C31BD1FFFD9C800769D14 /* TextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E9C31BC1FFFD9C800769D14 /* TextFieldView.xib */; };
+		3E9C31BE1FFFD9D000769D14 /* TextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E9C31BC1FFFD9C800769D14 /* TextFieldView.xib */; };
 		9A148DBD1EDB2924002E610C /* iOSTestableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A148DBB1EDB2924002E610C /* iOSTestableView.xib */; };
 		9A148DBE1EDB2924002E610C /* OverridedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A148DBC1EDB2924002E610C /* OverridedView.xib */; };
 		9A148DC01EDB292A002E610C /* LoadableViewTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A148DBF1EDB292A002E610C /* LoadableViewTestCase.swift */; };
@@ -56,6 +60,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3E9C31B91FFFD9A300769D14 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextFieldView.swift; path = TestFixtures/TextFieldView.swift; sourceTree = SOURCE_ROOT; };
+		3E9C31BC1FFFD9C800769D14 /* TextFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TextFieldView.xib; path = TestFixtures/TextFieldView.xib; sourceTree = SOURCE_ROOT; };
 		9A148DBB1EDB2924002E610C /* iOSTestableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iOSTestableView.xib; path = TestFixtures/iOSTestableView.xib; sourceTree = SOURCE_ROOT; };
 		9A148DBC1EDB2924002E610C /* OverridedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OverridedView.xib; path = TestFixtures/OverridedView.xib; sourceTree = SOURCE_ROOT; };
 		9A148DBF1EDB292A002E610C /* LoadableViewTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadableViewTestCase.swift; path = Tests/LoadableViewsTests/LoadableViewTestCase.swift; sourceTree = SOURCE_ROOT; };
@@ -134,7 +140,7 @@
 			children = (
 				9A4BB1D21C8AE989002B1AC9 /* LoadableView.swift */,
 			);
-			path = LoadableView;
+			name = LoadableView;
 			sourceTree = "<group>";
 		};
 		9A4BB1C31C8AE873002B1AC9 /* LoadableViewTests */ = {
@@ -144,7 +150,7 @@
 				9A148DBC1EDB2924002E610C /* OverridedView.xib */,
 				9A148DBF1EDB292A002E610C /* LoadableViewTestCase.swift */,
 			);
-			path = LoadableViewTests;
+			name = LoadableViewTests;
 			sourceTree = "<group>";
 		};
 		9A4BB1D11C8AE94A002B1AC9 /* Supporting Files */ = {
@@ -167,6 +173,8 @@
 				9A6C23851C8B1B190004F507 /* FooCell.xib */,
 				9A4BB1E21C8B06B4002B1AC9 /* WTFCatView.swift */,
 				9A4BB20F1C8B076A002B1AC9 /* WTFCatView.xib */,
+				3E9C31B91FFFD9A300769D14 /* TextFieldView.swift */,
+				3E9C31BC1FFFD9C800769D14 /* TextFieldView.xib */,
 				9A4BB1E91C8B06C7002B1AC9 /* AppDelegate.swift */,
 				9A4BB1F01C8B06C7002B1AC9 /* Assets.xcassets */,
 				9A4BB1F21C8B06C7002B1AC9 /* LaunchScreen.storyboard */,
@@ -306,6 +314,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E9C31BE1FFFD9D000769D14 /* TextFieldView.xib in Resources */,
 				9A148DBD1EDB2924002E610C /* iOSTestableView.xib in Resources */,
 				9A148DBE1EDB2924002E610C /* OverridedView.xib in Resources */,
 			);
@@ -315,6 +324,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E9C31BD1FFFD9C800769D14 /* TextFieldView.xib in Resources */,
 				9A6C23871C8B1B190004F507 /* FooCell.xib in Resources */,
 				9A4BB1F41C8B06C7002B1AC9 /* LaunchScreen.storyboard in Resources */,
 				9A4BB2081C8B0726002B1AC9 /* Example.storyboard in Resources */,
@@ -338,6 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E9C31BA1FFFD9A300769D14 /* TextFieldView.swift in Sources */,
 				9A148DC01EDB292A002E610C /* LoadableViewTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +359,7 @@
 			files = (
 				9A4BB1EA1C8B06C7002B1AC9 /* AppDelegate.swift in Sources */,
 				9A4BB2111C8B07BE002B1AC9 /* WTFCatView.swift in Sources */,
+				3E9C31BB1FFFD9AB00769D14 /* TextFieldView.swift in Sources */,
 				9A6C23861C8B1B190004F507 /* FooCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,7 +433,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -472,7 +484,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

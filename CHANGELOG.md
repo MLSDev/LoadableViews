@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 
 # Next
 
+* Added `LoadableControl` to allow LoadableView subclasses to have UIControl properties and methods.
+
 ## [2.2.1](https://github.com/MLSDev/LoadableViews/releases/tag/2.2.1)
 
 * Updated for Xcode 9.1 / Swift 4.0.2
