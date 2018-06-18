@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 
 # Next
 
+## [3.0.0](https://github.com/MLSDev/LoadableViews/releases/tag/3.0.0)
+
+* LoadableView no longer sets 'translatesAutoresizingMasksIntoConstraints' property on container view to false. If you plan to use LoadableView without superview, consider turning this property to false manually, because without a container view it will not be able to compute it's size. 
+
 ## [2.3.0](https://github.com/MLSDev/LoadableViews/releases/tag/2.3.0)
 
 * Added `LoadableControl` to allow LoadableView subclasses to have UIControl properties and methods.
