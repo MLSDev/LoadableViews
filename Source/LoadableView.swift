@@ -97,10 +97,17 @@ open class LoadableTableViewCell: UITableViewCell, NibLoadableProtocol {
         return contentView
     }
     
+    #if swift(>=4.2)
+    override public init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        setupNib()
+    }
+    #else
     override public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupNib()
     }
+    #endif
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
