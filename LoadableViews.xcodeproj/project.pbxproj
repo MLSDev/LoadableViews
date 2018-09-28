@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E9C31BA1FFFD9A300769D14 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9C31B91FFFD9A300769D14 /* TextFieldView.swift */; };
-		3E9C31BB1FFFD9AB00769D14 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9C31B91FFFD9A300769D14 /* TextFieldView.swift */; };
-		3E9C31BD1FFFD9C800769D14 /* TextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E9C31BC1FFFD9C800769D14 /* TextFieldView.xib */; };
-		3E9C31BE1FFFD9D000769D14 /* TextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E9C31BC1FFFD9C800769D14 /* TextFieldView.xib */; };
-		9A148DBD1EDB2924002E610C /* iOSTestableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A148DBB1EDB2924002E610C /* iOSTestableView.xib */; };
-		9A148DBE1EDB2924002E610C /* OverridedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A148DBC1EDB2924002E610C /* OverridedView.xib */; };
 		9A148DC01EDB292A002E610C /* LoadableViewTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A148DBF1EDB292A002E610C /* LoadableViewTestCase.swift */; };
 		9A4BB1C01C8AE873002B1AC9 /* LoadableViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4BB1B51C8AE873002B1AC9 /* LoadableViews.framework */; };
 		9A4BB1D31C8AE989002B1AC9 /* LoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4BB1D21C8AE989002B1AC9 /* LoadableView.swift */; };
@@ -26,6 +20,11 @@
 		9A4BB2111C8B07BE002B1AC9 /* WTFCatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4BB1E21C8B06B4002B1AC9 /* WTFCatView.swift */; };
 		9A6C23861C8B1B190004F507 /* FooCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C23841C8B1B190004F507 /* FooCell.swift */; };
 		9A6C23871C8B1B190004F507 /* FooCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A6C23851C8B1B190004F507 /* FooCell.xib */; };
+		9A7F38A4215E7F3800732210 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7F38A0215E7F3800732210 /* TextFieldView.swift */; };
+		9A7F38A5215E7F3800732210 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7F38A0215E7F3800732210 /* TextFieldView.swift */; };
+		9A7F38A7215E7F3800732210 /* OverridedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A7F38A1215E7F3800732210 /* OverridedView.xib */; };
+		9A7F38A9215E7F3800732210 /* TextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A7F38A2215E7F3800732210 /* TextFieldView.xib */; };
+		9A7F38AB215E7F3800732210 /* iOSTestableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A7F38A3215E7F3800732210 /* iOSTestableView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,10 +59,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3E9C31B91FFFD9A300769D14 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextFieldView.swift; path = TestFixtures/TextFieldView.swift; sourceTree = SOURCE_ROOT; };
-		3E9C31BC1FFFD9C800769D14 /* TextFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TextFieldView.xib; path = TestFixtures/TextFieldView.xib; sourceTree = SOURCE_ROOT; };
-		9A148DBB1EDB2924002E610C /* iOSTestableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iOSTestableView.xib; path = TestFixtures/iOSTestableView.xib; sourceTree = SOURCE_ROOT; };
-		9A148DBC1EDB2924002E610C /* OverridedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OverridedView.xib; path = TestFixtures/OverridedView.xib; sourceTree = SOURCE_ROOT; };
 		9A148DBF1EDB292A002E610C /* LoadableViewTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadableViewTestCase.swift; path = Tests/LoadableViewsTests/LoadableViewTestCase.swift; sourceTree = SOURCE_ROOT; };
 		9A4BB1B51C8AE873002B1AC9 /* LoadableViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadableViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A4BB1BF1C8AE873002B1AC9 /* LoadableViewss.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoadableViewss.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +75,10 @@
 		9A4BB20F1C8B076A002B1AC9 /* WTFCatView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTFCatView.xib; sourceTree = "<group>"; };
 		9A6C23841C8B1B190004F507 /* FooCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooCell.swift; sourceTree = "<group>"; };
 		9A6C23851C8B1B190004F507 /* FooCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FooCell.xib; sourceTree = "<group>"; };
+		9A7F38A0215E7F3800732210 /* TextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		9A7F38A1215E7F3800732210 /* OverridedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverridedView.xib; sourceTree = "<group>"; };
+		9A7F38A2215E7F3800732210 /* TextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldView.xib; sourceTree = "<group>"; };
+		9A7F38A3215E7F3800732210 /* iOSTestableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iOSTestableView.xib; sourceTree = "<group>"; };
 		9AD72B831EE1A09200CA2521 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +114,7 @@
 			children = (
 				9AD72B821EE1A07D00CA2521 /* Documentation */,
 				9A4BB1B71C8AE873002B1AC9 /* LoadableView */,
+				9A7F389F215E7F3800732210 /* TestFixtures */,
 				9A4BB1C31C8AE873002B1AC9 /* LoadableViewTests */,
 				9A4BB1E81C8B06C7002B1AC9 /* Example */,
 				9A4BB1B61C8AE873002B1AC9 /* Products */,
@@ -143,8 +143,6 @@
 		9A4BB1C31C8AE873002B1AC9 /* LoadableViewTests */ = {
 			isa = PBXGroup;
 			children = (
-				9A148DBB1EDB2924002E610C /* iOSTestableView.xib */,
-				9A148DBC1EDB2924002E610C /* OverridedView.xib */,
 				9A148DBF1EDB292A002E610C /* LoadableViewTestCase.swift */,
 			);
 			name = LoadableViewTests;
@@ -167,14 +165,23 @@
 				9A6C23851C8B1B190004F507 /* FooCell.xib */,
 				9A4BB1E21C8B06B4002B1AC9 /* WTFCatView.swift */,
 				9A4BB20F1C8B076A002B1AC9 /* WTFCatView.xib */,
-				3E9C31B91FFFD9A300769D14 /* TextFieldView.swift */,
-				3E9C31BC1FFFD9C800769D14 /* TextFieldView.xib */,
 				9A4BB1E91C8B06C7002B1AC9 /* AppDelegate.swift */,
 				9A4BB1F01C8B06C7002B1AC9 /* Assets.xcassets */,
 				9A4BB1F21C8B06C7002B1AC9 /* LaunchScreen.storyboard */,
 				9A4BB1F51C8B06C7002B1AC9 /* Info.plist */,
 			);
 			path = Example;
+			sourceTree = "<group>";
+		};
+		9A7F389F215E7F3800732210 /* TestFixtures */ = {
+			isa = PBXGroup;
+			children = (
+				9A7F38A0215E7F3800732210 /* TextFieldView.swift */,
+				9A7F38A1215E7F3800732210 /* OverridedView.xib */,
+				9A7F38A2215E7F3800732210 /* TextFieldView.xib */,
+				9A7F38A3215E7F3800732210 /* iOSTestableView.xib */,
+			);
+			path = TestFixtures;
 			sourceTree = "<group>";
 		};
 		9AD72B821EE1A07D00CA2521 /* Documentation */ = {
@@ -222,6 +229,7 @@
 			buildPhases = (
 				9A4BB1BB1C8AE873002B1AC9 /* Sources */,
 				9A4BB1BC1C8AE873002B1AC9 /* Frameworks */,
+				9A7F389E215E7E3400732210 /* Link xibs */,
 				9A4BB1BD1C8AE873002B1AC9 /* Resources */,
 			);
 			buildRules = (
@@ -308,9 +316,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E9C31BE1FFFD9D000769D14 /* TextFieldView.xib in Resources */,
-				9A148DBD1EDB2924002E610C /* iOSTestableView.xib in Resources */,
-				9A148DBE1EDB2924002E610C /* OverridedView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,16 +323,39 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E9C31BD1FFFD9C800769D14 /* TextFieldView.xib in Resources */,
 				9A6C23871C8B1B190004F507 /* FooCell.xib in Resources */,
 				9A4BB1F41C8B06C7002B1AC9 /* LaunchScreen.storyboard in Resources */,
+				9A7F38AB215E7F3800732210 /* iOSTestableView.xib in Resources */,
 				9A4BB2081C8B0726002B1AC9 /* Example.storyboard in Resources */,
 				9A4BB1F11C8B06C7002B1AC9 /* Assets.xcassets in Resources */,
 				9A4BB2101C8B076A002B1AC9 /* WTFCatView.xib in Resources */,
+				9A7F38A9215E7F3800732210 /* TextFieldView.xib in Resources */,
+				9A7F38A7215E7F3800732210 /* OverridedView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A7F389E215E7E3400732210 /* Link xibs */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Link xibs";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "xibs=(OverridedView iOSTestableView TextFieldView)\n# Type a script or drag a script file from your workspace to insert its path.\n\nfor xib in ${xibs[*]}\ndo\nibtool --compilation-directory \"${TARGET_TEMP_DIR}\" \"${SRCROOT}/TestFixtures/$xib.xib\"\nibtool --link \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\" \"${TARGET_TEMP_DIR}/$xib.nib\"\ndone\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9A4BB1B01C8AE873002B1AC9 /* Sources */ = {
@@ -342,8 +370,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E9C31BA1FFFD9A300769D14 /* TextFieldView.swift in Sources */,
 				9A148DC01EDB292A002E610C /* LoadableViewTestCase.swift in Sources */,
+				9A7F38A4215E7F3800732210 /* TextFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,8 +380,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A4BB1EA1C8B06C7002B1AC9 /* AppDelegate.swift in Sources */,
+				9A7F38A5215E7F3800732210 /* TextFieldView.swift in Sources */,
 				9A4BB2111C8B07BE002B1AC9 /* WTFCatView.swift in Sources */,
-				3E9C31BB1FFFD9AB00769D14 /* TextFieldView.swift in Sources */,
 				9A6C23861C8B1B190004F507 /* FooCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
