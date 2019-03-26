@@ -3,13 +3,17 @@ All notable changes to this project will be documented in this file.
 
 # Next
 
+## [3.2.0](https://github.com/MLSDev/LoadableViews/releases/tag/3.2.0)
+
+* Support for Swift 5 and Xcode 10.2.
+
 ## [3.1.0](https://github.com/MLSDev/LoadableViews/releases/tag/3.1.0)
 
 * Support for Swift 4.2 and Xcode 10.
 
 ## [3.0.0](https://github.com/MLSDev/LoadableViews/releases/tag/3.0.0)
 
-* LoadableView no longer sets 'translatesAutoresizingMasksIntoConstraints' property on container view to false. If you plan to use LoadableView without superview, consider turning this property to false manually, because without a container view it will not be able to compute it's size. 
+* LoadableView no longer sets 'translatesAutoresizingMasksIntoConstraints' property on container view to false. If you plan to use LoadableView without superview, consider turning this property to false manually, because without a container view it will not be able to compute it's size.
 
 ## [2.3.0](https://github.com/MLSDev/LoadableViews/releases/tag/2.3.0)
 
