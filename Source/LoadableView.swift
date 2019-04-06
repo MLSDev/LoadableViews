@@ -73,6 +73,41 @@ extension NibLoadableProtocol {
     }
 }
 
+extension NibLoadableProtocol where Self: UIView {
+    
+    /// Sets the frame of the view to result of `systemLayoutSizeFitting` method call with `UIView.layoutFittingCompressedSize` parameter.
+    ///
+    /// - Returns: loadable view
+    public func compressedLayout() -> Self {
+        frame.size = systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
+        return self
+    }
+    
+    /// Sets the frame of the view to result of `systemLayoutSizeFitting` method call with `UIView.layoutFittingExpandedSize` parameter.
+    ///
+    /// - Returns: loadable view
+    public func expandedLayout() -> Self {
+        frame.size = systemLayoutSizeFitting(UIView.layoutFittingExpandedSize)
+        return self
+    }
+    
+    /// Sets the frame of the view to result of `systemLayoutSizeFitting` method call with provided parameters.
+    ///
+    /// - Parameters:
+    ///   - fittingSize: fittingSize to be passed to `systemLayoutSizeFitting` method.
+    ///   - horizontalPriority: horizontal priority to be passed to `systemLayoutSizeFitting` method.
+    ///   - verticalPriority: vertical priority to be passed to `systemLayoutSizeFitting` method.
+    /// - Returns: loadable view
+    public func systemLayout(fittingSize: CGSize,
+                             horizontalPriority: UILayoutPriority,
+                             verticalPriority: UILayoutPriority) -> Self {
+        frame.size = systemLayoutSizeFitting(fittingSize,
+                                             withHorizontalFittingPriority: horizontalPriority,
+                                             verticalFittingPriority: verticalPriority)
+        return self
+    }
+}
+
 /// UIView subclass, that can be loaded into different xib or storyboard by simply referencing it's class.
 open class LoadableView: UIView, NibLoadableProtocol {
 

@@ -3,6 +3,9 @@ All notable changes to this project will be documented in this file.
 
 # Next
 
+* Added convenience methods, that allow to resize view properly if view is using AutoLayout and can determine it's desired size: `compressedLayout()`, `expandedLayout()` and `systemLayout(fittingSize:, horizontalPriority:, verticalPriority:)`.
+* Dropped support for Swift 3.
+
 ## [3.2.0](https://github.com/MLSDev/LoadableViews/releases/tag/3.2.0)
 
 * Support for Swift 5 and Xcode 10.2.

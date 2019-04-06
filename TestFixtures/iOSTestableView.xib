@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="iOSTestableView" customModule="LoadableViewss" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="iOSTestableView" customModule="Example" customModuleProvider="target">
             <connections>
                 <outlet property="label" destination="Xb7-wL-oSh" id="Zfm-IV-vR4"/>
             </connections>
@@ -20,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xb7-wL-oSh">
-                    <rect key="frame" x="166.5" y="323" width="42" height="21"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
@@ -29,7 +29,11 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Xb7-wL-oSh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="PiK-OV-nOU"/>
+                <constraint firstAttribute="trailing" secondItem="Xb7-wL-oSh" secondAttribute="trailing" id="a6G-Ma-Ygb"/>
                 <constraint firstItem="Xb7-wL-oSh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bBE-hb-jfV"/>
+                <constraint firstItem="Xb7-wL-oSh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bTd-sT-uKg"/>
+                <constraint firstItem="Xb7-wL-oSh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rgt-PV-igG"/>
+                <constraint firstAttribute="bottom" secondItem="Xb7-wL-oSh" secondAttribute="bottom" id="xuQ-5d-9Vh"/>
             </constraints>
         </view>
     </objects>

@@ -40,6 +40,22 @@ class LoadableViewTestCase: XCTestCase {
         
         XCTAssertNotNil(control.textField)
     }
+    
+    func testLoadableViewDoesNotHaveAFrame() {
+        let view = iOSTestableView()
+        XCTAssertEqual(view.frame, .zero)
+    }
+    
+    func testLoadableViewCanCalculateItsFrameUsingCompressedOrExpandedLayout() {
+        let compact = iOSTestableView().compressedLayout()
+        let expanded = iOSTestableView().expandedLayout()
+        let system = iOSTestableView().systemLayout(fittingSize: UIView.layoutFittingCompressedSize,
+                                                    horizontalPriority: UILayoutPriority.fittingSizeLevel,
+                                                    verticalPriority: UILayoutPriority.fittingSizeLevel)
+        XCTAssertNotEqual(compact.frame, .zero)
+        XCTAssertNotEqual(expanded.frame, .zero)
+        XCTAssertNotEqual(system.frame, .zero)
+    }
 }
 
 class LoadableViewSetupNibTestCase : XCTestCase {
