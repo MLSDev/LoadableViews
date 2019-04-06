@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "LoadableViews"
-  s.version      = "3.2.0"
+  s.version      = "3.3.0"
   s.summary      = "Easiest way to load view classes into another XIB or storyboard."
   s.homepage     = "https://github.com/MLSDev/LoadableViews"
   s.screenshots  = "https://github.com/MLSDev/LoadableViews/raw/master/wtf_cat_designable.png"
