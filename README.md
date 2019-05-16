@@ -106,5 +106,5 @@ Change view container
 
 Find out more [here][mlsdev] and don't hesitate to [contact us][contact]!
 
-[mlsdev]: http://mlsdev.com
-[contact]: http://mlsdev.com/contact_us
+[mlsdev]: https://mlsdev.com
+[contact]: https://mlsdev.com/contact-us
