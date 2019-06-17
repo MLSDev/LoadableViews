@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 
 # Next
 
+## [3.4.0](https://github.com/MLSDev/LoadableViews/releases/tag/3.4.0)
+
 * Support for Swift Package Manager in Xcode 11.
 * Added ability to customize Bundle from which view is being loaded.
 
