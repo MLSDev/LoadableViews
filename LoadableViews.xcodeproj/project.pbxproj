@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E6D1BE722B793EF009AF727 /* RebundledView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E6D1BE622B793EF009AF727 /* RebundledView.xib */; };
+		3E6D1BE822B79500009AF727 /* CustomBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3E6D1BDE22B79370009AF727 /* CustomBundle.bundle */; };
 		9A148DC01EDB292A002E610C /* LoadableViewTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A148DBF1EDB292A002E610C /* LoadableViewTestCase.swift */; };
 		9A4BB1C01C8AE873002B1AC9 /* LoadableViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4BB1B51C8AE873002B1AC9 /* LoadableViews.framework */; };
 		9A4BB1D31C8AE989002B1AC9 /* LoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4BB1D21C8AE989002B1AC9 /* LoadableView.swift */; };
@@ -28,6 +30,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3E6D1BE422B7938F009AF727 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A4BB1AC1C8AE873002B1AC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E6D1BDD22B79370009AF727;
+			remoteInfo = CustomBundle;
+		};
 		9A4BB1C11C8AE873002B1AC9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9A4BB1AC1C8AE873002B1AC9 /* Project object */;
@@ -59,6 +68,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3E6D1BDE22B79370009AF727 /* CustomBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E6D1BE022B79370009AF727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E6D1BE622B793EF009AF727 /* RebundledView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RebundledView.xib; sourceTree = "<group>"; };
 		9A148DBF1EDB292A002E610C /* LoadableViewTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadableViewTestCase.swift; path = Tests/LoadableViewsTests/LoadableViewTestCase.swift; sourceTree = SOURCE_ROOT; };
 		9A4BB1B51C8AE873002B1AC9 /* LoadableViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadableViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A4BB1BF1C8AE873002B1AC9 /* LoadableViewss.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoadableViewss.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +121,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E6D1BDF22B79370009AF727 /* CustomBundle */ = {
+			isa = PBXGroup;
+			children = (
+				3E6D1BE022B79370009AF727 /* Info.plist */,
+				3E6D1BE622B793EF009AF727 /* RebundledView.xib */,
+			);
+			path = CustomBundle;
+			sourceTree = "<group>";
+		};
 		9A4BB1AB1C8AE873002B1AC9 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +138,7 @@
 				9A7F389F215E7F3800732210 /* TestFixtures */,
 				9A4BB1C31C8AE873002B1AC9 /* LoadableViewTests */,
 				9A4BB1E81C8B06C7002B1AC9 /* Example */,
+				3E6D1BDF22B79370009AF727 /* CustomBundle */,
 				9A4BB1B61C8AE873002B1AC9 /* Products */,
 				9A4BB1D11C8AE94A002B1AC9 /* Supporting Files */,
 			);
@@ -128,6 +150,7 @@
 				9A4BB1B51C8AE873002B1AC9 /* LoadableViews.framework */,
 				9A4BB1BF1C8AE873002B1AC9 /* LoadableViewss.xctest */,
 				9A4BB1E71C8B06C7002B1AC9 /* Example.app */,
+				3E6D1BDE22B79370009AF727 /* CustomBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -205,6 +228,21 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		3E6D1BDD22B79370009AF727 /* CustomBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E6D1BE322B79370009AF727 /* Build configuration list for PBXNativeTarget "CustomBundle" */;
+			buildPhases = (
+				3E6D1BDC22B79370009AF727 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomBundle;
+			productName = CustomBundle;
+			productReference = 3E6D1BDE22B79370009AF727 /* CustomBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		9A4BB1B41C8AE873002B1AC9 /* LoadableViews */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A4BB1C91C8AE873002B1AC9 /* Build configuration list for PBXNativeTarget "LoadableViews" */;
@@ -235,6 +273,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				3E6D1BE522B7938F009AF727 /* PBXTargetDependency */,
 				9A4BB1C21C8AE873002B1AC9 /* PBXTargetDependency */,
 			);
 			name = LoadableViewsTests;
@@ -271,6 +310,9 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Denys Telezhkin";
 				TargetAttributes = {
+					3E6D1BDD22B79370009AF727 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 					9A4BB1B41C8AE873002B1AC9 = {
 						CreatedOnToolsVersion = 7.2.1;
 						LastSwiftMigration = 0900;
@@ -300,11 +342,20 @@
 				9A4BB1B41C8AE873002B1AC9 /* LoadableViews */,
 				9A4BB1BE1C8AE873002B1AC9 /* LoadableViewsTests */,
 				9A4BB1E61C8B06C7002B1AC9 /* Example */,
+				3E6D1BDD22B79370009AF727 /* CustomBundle */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3E6D1BDC22B79370009AF727 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E6D1BE722B793EF009AF727 /* RebundledView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9A4BB1B31C8AE873002B1AC9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -316,6 +367,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E6D1BE822B79500009AF727 /* CustomBundle.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +441,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3E6D1BE522B7938F009AF727 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E6D1BDD22B79370009AF727 /* CustomBundle */;
+			targetProxy = 3E6D1BE422B7938F009AF727 /* PBXContainerItemProxy */;
+		};
 		9A4BB1C21C8AE873002B1AC9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9A4BB1B41C8AE873002B1AC9 /* LoadableViews */;
@@ -413,6 +470,64 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3E6D1BE122B79370009AF727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CustomBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mlsdev.CustomBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		3E6D1BE222B79370009AF727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = CustomBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mlsdev.CustomBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		9A4BB1C71C8AE873002B1AC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -635,6 +750,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3E6D1BE322B79370009AF727 /* Build configuration list for PBXNativeTarget "CustomBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E6D1BE122B79370009AF727 /* Debug */,
+				3E6D1BE222B79370009AF727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9A4BB1AF1C8AE873002B1AC9 /* Build configuration list for PBXProject "LoadableViews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

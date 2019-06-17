@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 
 # Next
 
+* Added ability to customize Bundle from which view is being loaded.
+
 ## [3.3.0](https://github.com/MLSDev/LoadableViews/releases/tag/3.3.0)
 
 * Added convenience methods, that allow to resize view properly if view is using AutoLayout and can determine it's desired size: `compressedLayout()`, `expandedLayout()` and `systemLayout(fittingSize:, horizontalPriority:, verticalPriority:)`.

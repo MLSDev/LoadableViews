@@ -42,6 +42,9 @@ public protocol NibLoadableProtocol : NSObjectProtocol {
     
     /// Name of .xib file to load view from.
     var nibName : String { get }
+    
+    /// Bundle to load nib from
+    var bundle: Bundle { get }
 }
 
 extension UIView {
@@ -50,14 +53,19 @@ extension UIView {
     
     /// Default nibName for all UIViews, equal to name of the class.
     @objc dynamic open var nibName : String { return String(describing: type(of: self)) }
+    
+    /// Bundle to load nib from. Defaults to Bundle(for: type(of: self)).
+    @objc dynamic open var bundle: Bundle {
+        return Bundle(for: type(of: self))
+    }
 }
 
 extension NibLoadableProtocol {
+    
     /// Method that loads view from single view xib with `nibName`.
     ///
     /// - returns: loaded from xib view
     public func loadNib() -> UIView {
-        let bundle = Bundle(for: type(of: self))
         let nib = UINib(nibName: nibName, bundle: bundle)
         let view = nib.instantiate(withOwner: self, options: nil).first as! UIView
         return view

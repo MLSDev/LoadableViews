@@ -21,6 +21,15 @@ class RenamedView : LoadableView {
     }
 }
 
+class RebundledView: LoadableView {
+    override var bundle: Bundle {
+        guard let url = Bundle(for: type(of: self)).url(forResource: "CustomBundle", withExtension: "bundle") else {
+            fatalError("Cannot find custom bundle")
+        }
+        return Bundle(url: url) ?? .main
+    }
+}
+
 class LoadableViewTestCase: XCTestCase {
 
     func testiOSViewLoading() {
@@ -55,6 +64,12 @@ class LoadableViewTestCase: XCTestCase {
         XCTAssertNotEqual(compact.frame, .zero)
         XCTAssertNotEqual(expanded.frame, .zero)
         XCTAssertNotEqual(system.frame, .zero)
+    }
+    
+    func testBundleIsOverridable() {
+        XCTAssertNotEqual(iOSTestableView().bundle, RebundledView().bundle)
+        XCTAssertNotNil(iOSTestableView())
+        XCTAssertNotNil(RebundledView())
     }
 }
 
