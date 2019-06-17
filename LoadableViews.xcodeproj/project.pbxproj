@@ -413,7 +413,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "xibs=(OverridedView iOSTestableView TextFieldView)\n# Type a script or drag a script file from your workspace to insert its path.\n\nfor xib in ${xibs[*]}\ndo\nibtool --compilation-directory \"${TARGET_TEMP_DIR}\" \"${SRCROOT}/TestFixtures/$xib.xib\"\nibtool --link \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\" \"${TARGET_TEMP_DIR}/$xib.nib\"\ndone\n\n";
+			shellScript = "xibs=(OverridedView iOSTestableView TextFieldView)\n# Type a script or drag a script file from your workspace to insert its path.\n\nfor xib in ${xibs[*]}\ndo\nibtool --compilation-directory \"${TARGET_TEMP_DIR}\" \"${SRCROOT}/Sources/Tests/Fixtures/$xib.xib\"\nibtool --link \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\" \"${TARGET_TEMP_DIR}/$xib.nib\"\ndone\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
