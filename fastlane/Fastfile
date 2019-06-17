@@ -86,6 +86,6 @@ lane :release do |params|
     puts "Attaching Carthage prebuilt binary to release."
     releases = client.releases('MLSDev/LoadableViews')
     client.upload_asset(releases[0].url, 'LoadableViews.framework.zip')
-    sh "rm -rf ../LoadableViews.framework.zip"
+    sh "rm -rf LoadableViews.framework.zip"
   end
 end
