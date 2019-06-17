@@ -31,14 +31,11 @@ let package = Package(
         .tvOS(.v9)
     ],
     products: [
-        .library(
-            name: "LoadableViews",
-            targets: ["LoadableViews"])
+        .library(name: "LoadableViews", targets: ["LoadableViews"])
     ],
     targets: [
-        .target(
-            name: "LoadableViews",
-            path: "Source")
+        .target(name: "LoadableViews"),
+        .testTarget(name: "Tests", dependencies: [ "LoadableViews"])
     ],
-    swiftLanguageVersions: [.v5]
+    swiftLanguageVersions: [.v4_2, .v5]
 )

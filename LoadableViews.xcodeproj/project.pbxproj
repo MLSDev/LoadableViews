@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		3E6D1BE722B793EF009AF727 /* RebundledView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E6D1BE622B793EF009AF727 /* RebundledView.xib */; };
 		3E6D1BE822B79500009AF727 /* CustomBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3E6D1BDE22B79370009AF727 /* CustomBundle.bundle */; };
-		9A148DC01EDB292A002E610C /* LoadableViewTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A148DBF1EDB292A002E610C /* LoadableViewTestCase.swift */; };
+		3E6D1BEE22B7982A009AF727 /* LoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6D1BED22B79822009AF727 /* LoadableView.swift */; };
+		3E6D1BEF22B7982F009AF727 /* LoadableViewTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6D1BEB22B79822009AF727 /* LoadableViewTestCase.swift */; };
 		9A4BB1C01C8AE873002B1AC9 /* LoadableViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4BB1B51C8AE873002B1AC9 /* LoadableViews.framework */; };
-		9A4BB1D31C8AE989002B1AC9 /* LoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4BB1D21C8AE989002B1AC9 /* LoadableView.swift */; };
 		9A4BB1EA1C8B06C7002B1AC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4BB1E91C8B06C7002B1AC9 /* AppDelegate.swift */; };
 		9A4BB1F11C8B06C7002B1AC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A4BB1F01C8B06C7002B1AC9 /* Assets.xcassets */; };
 		9A4BB1F41C8B06C7002B1AC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A4BB1F21C8B06C7002B1AC9 /* LaunchScreen.storyboard */; };
@@ -71,12 +71,12 @@
 		3E6D1BDE22B79370009AF727 /* CustomBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E6D1BE022B79370009AF727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E6D1BE622B793EF009AF727 /* RebundledView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RebundledView.xib; sourceTree = "<group>"; };
-		9A148DBF1EDB292A002E610C /* LoadableViewTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadableViewTestCase.swift; path = Tests/LoadableViewsTests/LoadableViewTestCase.swift; sourceTree = SOURCE_ROOT; };
+		3E6D1BEB22B79822009AF727 /* LoadableViewTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableViewTestCase.swift; sourceTree = "<group>"; };
+		3E6D1BED22B79822009AF727 /* LoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableView.swift; sourceTree = "<group>"; };
 		9A4BB1B51C8AE873002B1AC9 /* LoadableViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadableViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A4BB1BF1C8AE873002B1AC9 /* LoadableViewss.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoadableViewss.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A4BB1CF1C8AE93E002B1AC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
 		9A4BB1D01C8AE93E002B1AC9 /* Tests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Tests.plist; path = "Supporting Files/Tests.plist"; sourceTree = "<group>"; };
-		9A4BB1D21C8AE989002B1AC9 /* LoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadableView.swift; path = Source/LoadableView.swift; sourceTree = SOURCE_ROOT; };
 		9A4BB1E21C8B06B4002B1AC9 /* WTFCatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTFCatView.swift; sourceTree = "<group>"; };
 		9A4BB1E71C8B06C7002B1AC9 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A4BB1E91C8B06C7002B1AC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,13 +130,37 @@
 			path = CustomBundle;
 			sourceTree = "<group>";
 		};
+		3E6D1BE922B79822009AF727 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3E6D1BEA22B79822009AF727 /* Tests */,
+				3E6D1BEC22B79822009AF727 /* LoadableViews */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		3E6D1BEA22B79822009AF727 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9A7F389F215E7F3800732210 /* Fixtures */,
+				3E6D1BEB22B79822009AF727 /* LoadableViewTestCase.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		3E6D1BEC22B79822009AF727 /* LoadableViews */ = {
+			isa = PBXGroup;
+			children = (
+				3E6D1BED22B79822009AF727 /* LoadableView.swift */,
+			);
+			path = LoadableViews;
+			sourceTree = "<group>";
+		};
 		9A4BB1AB1C8AE873002B1AC9 = {
 			isa = PBXGroup;
 			children = (
 				9AD72B821EE1A07D00CA2521 /* Documentation */,
-				9A4BB1B71C8AE873002B1AC9 /* LoadableView */,
-				9A7F389F215E7F3800732210 /* TestFixtures */,
-				9A4BB1C31C8AE873002B1AC9 /* LoadableViewTests */,
+				3E6D1BE922B79822009AF727 /* Sources */,
 				9A4BB1E81C8B06C7002B1AC9 /* Example */,
 				3E6D1BDF22B79370009AF727 /* CustomBundle */,
 				9A4BB1B61C8AE873002B1AC9 /* Products */,
@@ -153,22 +177,6 @@
 				3E6D1BDE22B79370009AF727 /* CustomBundle.bundle */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		9A4BB1B71C8AE873002B1AC9 /* LoadableView */ = {
-			isa = PBXGroup;
-			children = (
-				9A4BB1D21C8AE989002B1AC9 /* LoadableView.swift */,
-			);
-			name = LoadableView;
-			sourceTree = "<group>";
-		};
-		9A4BB1C31C8AE873002B1AC9 /* LoadableViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				9A148DBF1EDB292A002E610C /* LoadableViewTestCase.swift */,
-			);
-			name = LoadableViewTests;
 			sourceTree = "<group>";
 		};
 		9A4BB1D11C8AE94A002B1AC9 /* Supporting Files */ = {
@@ -196,7 +204,7 @@
 			path = Example;
 			sourceTree = "<group>";
 		};
-		9A7F389F215E7F3800732210 /* TestFixtures */ = {
+		9A7F389F215E7F3800732210 /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
 				9A7F38A0215E7F3800732210 /* TextFieldView.swift */,
@@ -204,7 +212,7 @@
 				9A7F38A2215E7F3800732210 /* TextFieldView.xib */,
 				9A7F38A3215E7F3800732210 /* iOSTestableView.xib */,
 			);
-			path = TestFixtures;
+			path = Fixtures;
 			sourceTree = "<group>";
 		};
 		9AD72B821EE1A07D00CA2521 /* Documentation */ = {
@@ -414,7 +422,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A4BB1D31C8AE989002B1AC9 /* LoadableView.swift in Sources */,
+				3E6D1BEE22B7982A009AF727 /* LoadableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A148DC01EDB292A002E610C /* LoadableViewTestCase.swift in Sources */,
+				3E6D1BEF22B7982F009AF727 /* LoadableViewTestCase.swift in Sources */,
 				9A7F38A4215E7F3800732210 /* TextFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -686,6 +694,7 @@
 		9A4BB1CD1C8AE873002B1AC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Supporting Files/Tests.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -702,6 +711,7 @@
 		9A4BB1CE1C8AE873002B1AC9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Supporting Files/Tests.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -24,7 +24,7 @@ class RenamedView : LoadableView {
 class RebundledView: LoadableView {
     override var bundle: Bundle {
         guard let url = Bundle(for: type(of: self)).url(forResource: "CustomBundle", withExtension: "bundle") else {
-            fatalError("Cannot find custom bundle")
+            return .main
         }
         return Bundle(url: url) ?? .main
     }

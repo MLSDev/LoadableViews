@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = "9.0"
   s.swift_versions = ['4.0', '4.2', '5.0']
   s.source       = { git: "https://github.com/MLSDev/LoadableViews.git", tag: s.version.to_s }
-  s.source_files  = "Source/*.swift"
+  s.source_files  = "Sources/LoadableViews/*.swift"
   s.framework  = "UIKit"
 end
