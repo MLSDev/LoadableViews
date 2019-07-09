@@ -1,14 +1,14 @@
 sudo: false
 language: objective-c
 os: osx
-osx_image: xcode10.2
+osx_image: xcode11
 
 matrix:
   include:
+    - env: ACTION=test_ios13
     - env: ACTION=test_ios12
-    - env: ACTION=test_ios11
+    - env: ACTION=test_tvos13
     - env: ACTION=test_tvos12
-    - env: ACTION=test_tvos11
     - env: ACTION=test_ios_swift4
     - env: ACTION=test_tvos_swift4
     - env: ACTION=pod_lint
@@ -16,4 +16,4 @@ matrix:
 
 script:
   - instruments -s devices # List all available simulators
-  - bundle exec fastlane $ACTION
+  - FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT=120 bundle exec fastlane $ACTION

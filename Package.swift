@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.1
 //
 //  Package.swift
 //
@@ -35,7 +35,7 @@ let package = Package(
     ],
     targets: [
         .target(name: "LoadableViews"),
-        .testTarget(name: "Tests", dependencies: [ "LoadableViews"])
+        // .testTarget(name: "Tests", dependencies: [ "LoadableViews"])
     ],
     swiftLanguageVersions: [.v4_2, .v5]
 )
