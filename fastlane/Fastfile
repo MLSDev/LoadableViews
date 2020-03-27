@@ -17,14 +17,6 @@ lane :test_tvos12 do
   scan(device: "Apple TV 4K (12.1)")
 end
 
-lane :test_ios_swift4 do
-  scan(devices: ["iPhone Xs (13.0)"], xcargs: "SWIFT_VERSION=4.2")
-end
-
-lane :test_tvos_swift4 do
-  scan(devices: ["Apple TV (13.0)"], xcargs: "SWIFT_VERSION=4.2")
-end
-
 lane :pod_lint do
   sh "bundle exec pod repo update"
   pod_lib_lint(allow_warnings: true, verbose: true)
@@ -69,10 +61,9 @@ lane :release do |params|
     puts "Pushing to CocoaPods trunk."
     sh "bundle exec pod trunk push LoadableViews.podspec --allow-warnings"
 
-    puts "Preparing Carthage binary framework."
-
-    sh "carthage build --no-skip-current"
-    sh "carthage archive LoadableViews"
+    # puts "Preparing Carthage binary framework."
+    # sh "carthage build --no-skip-current"
+    # sh "carthage archive LoadableViews"
 
     puts "Pushing as a GitHub Release."
     fastlane_require 'octokit'
@@ -83,9 +74,9 @@ lane :release do |params|
                      name: version,
                      body: stripped_changelog)
 
-    puts "Attaching Carthage prebuilt binary to release."
-    releases = client.releases('MLSDev/LoadableViews')
-    client.upload_asset(releases[0].url, 'LoadableViews.framework.zip')
-    sh "rm -rf LoadableViews.framework.zip"
+    # puts "Attaching Carthage prebuilt binary to release."
+    # releases = client.releases('MLSDev/LoadableViews')
+    # client.upload_asset(releases[0].url, 'LoadableViews.framework.zip')
+    # sh "rm -rf LoadableViews.framework.zip"
   end
 end

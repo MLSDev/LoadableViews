@@ -85,13 +85,7 @@ Change view container
 #### CocoaPods
 
 ```ruby
-  pod 'LoadableViews', '~> 2.2.0'
-```
-
-#### Carthage
-
-```ruby
-  carthage 'MLSDev/LoadableViews' "2.2.0"
+  pod 'LoadableViews'
 ```
 
 ## License
