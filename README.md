@@ -1,4 +1,4 @@
-![Build Status](https://travis-ci.org/MLSDev/LoadableViews.svg?branch=master) &nbsp;
+![CI](https://github.com/MLSDev/LoadableViews/workflows/CI/badge.svg)
 [![codecov.io](http://codecov.io/github/MLSDev/LoadableViews/coverage.svg?branch=master)](http://codecov.io/github/MLSDev/LoadableViews?branch=master)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)]()
