@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 
 # Next
 
+## [3.5.0](https://github.com/MLSDev/LoadableViews/releases/tag/3.5.0)
+
 ### Changed
 
 * Minimum iOS deployment target - iOS 9.
