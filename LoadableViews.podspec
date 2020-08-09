@@ -7,9 +7,9 @@ Pod::Spec.new do |s|
   s.license      = { type: "MIT", file: "LICENSE" }
   s.author             = { "Denys Telezhkin" => "telezhkin@mlsdev.com" }
   s.social_media_url   = "https://twitter.com/mlsdevcom"
-  s.ios.deployment_target = "8.0"
+  s.ios.deployment_target = "9.0"
   s.tvos.deployment_target = "9.0"
-  s.swift_versions = ['4.0', '4.2', '5.0']
+  s.swift_versions = ['4.0', '4.2', '5.0', '5.1', '5.2', '5.3']
   s.source       = { git: "https://github.com/MLSDev/LoadableViews.git", tag: s.version.to_s }
   s.source_files  = "Sources/LoadableViews/*.swift"
   s.framework  = "UIKit"

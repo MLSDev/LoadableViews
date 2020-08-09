@@ -1,33 +1,25 @@
 fastlane_version "1.98.0"
 
-lane :test_ios13 do
-  scan(devices: ["iPad Pro (12.9-inch) (3rd generation) (13.3)"])
+lane :test_ios14 do
+  scan(devices: ["iPhone 11 Pro (14.0)"])
   sh "bash ../codecov.sh"
 end
 
-lane :test_ios12 do
-  scan(devices: ["iPhone X (12.4)"])
+lane :test_ios13 do
+  scan(devices: ["iPad Pro (12.9-inch) (3rd generation) (13.5)"])
+end
+
+lane :test_tvos14 do
+  scan(device: "Apple TV 4K (14.0)")
 end
 
 lane :test_tvos13 do
   scan(device: "Apple TV 4K (13.3)")
 end
 
-lane :test_tvos12 do
-  scan(device: "Apple TV 4K (12.4)")
-end
-
 lane :pod_lint do
   sh "bundle exec pod repo update"
   pod_lib_lint(allow_warnings: true, verbose: true)
-end
-
-lane :carthage_build do
-  carthage(command: "build", no_skip_current: true, verbose: false)
-end
-
-lane :spm_macos do
-  sh "swift build"
 end
 
 lane :release do |params|
@@ -61,10 +53,6 @@ lane :release do |params|
     puts "Pushing to CocoaPods trunk."
     sh "bundle exec pod trunk push LoadableViews.podspec --allow-warnings"
 
-    # puts "Preparing Carthage binary framework."
-    # sh "carthage build --no-skip-current"
-    # sh "carthage archive LoadableViews"
-
     puts "Pushing as a GitHub Release."
     fastlane_require 'octokit'
     stripped_changelog = changelog.split(/^## /)[1].split("\n")[1..-1].join("\n").strip
@@ -73,10 +61,5 @@ lane :release do |params|
                      version,
                      name: version,
                      body: stripped_changelog)
-
-    # puts "Attaching Carthage prebuilt binary to release."
-    # releases = client.releases('MLSDev/LoadableViews')
-    # client.upload_asset(releases[0].url, 'LoadableViews.framework.zip')
-    # sh "rm -rf LoadableViews.framework.zip"
   end
 end

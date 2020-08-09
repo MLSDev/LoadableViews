@@ -26,16 +26,11 @@ import PackageDescription
 
 let package = Package(
     name: "LoadableViews",
-    platforms: [
-        .iOS(.v8),
-        .tvOS(.v9)
-    ],
     products: [
         .library(name: "LoadableViews", targets: ["LoadableViews"])
     ],
     targets: [
-        .target(name: "LoadableViews"),
-        // .testTarget(name: "Tests", dependencies: [ "LoadableViews"])
+        .target(name: "LoadableViews")
     ],
     swiftLanguageVersions: [.v4_2, .v5]
 )
