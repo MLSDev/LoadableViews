@@ -74,7 +74,7 @@
 		3E6D1BEB22B79822009AF727 /* LoadableViewTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableViewTestCase.swift; sourceTree = "<group>"; };
 		3E6D1BED22B79822009AF727 /* LoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableView.swift; sourceTree = "<group>"; };
 		9A4BB1B51C8AE873002B1AC9 /* LoadableViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadableViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A4BB1BF1C8AE873002B1AC9 /* LoadableViewss.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoadableViewss.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A4BB1BF1C8AE873002B1AC9 /* LoadableViewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoadableViewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A4BB1CF1C8AE93E002B1AC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
 		9A4BB1D01C8AE93E002B1AC9 /* Tests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Tests.plist; path = "Supporting Files/Tests.plist"; sourceTree = "<group>"; };
 		9A4BB1E21C8B06B4002B1AC9 /* WTFCatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTFCatView.swift; sourceTree = "<group>"; };
@@ -172,7 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				9A4BB1B51C8AE873002B1AC9 /* LoadableViews.framework */,
-				9A4BB1BF1C8AE873002B1AC9 /* LoadableViewss.xctest */,
+				9A4BB1BF1C8AE873002B1AC9 /* LoadableViewsTests.xctest */,
 				9A4BB1E71C8B06C7002B1AC9 /* Example.app */,
 				3E6D1BDE22B79370009AF727 /* CustomBundle.bundle */,
 			);
@@ -286,7 +286,7 @@
 			);
 			name = LoadableViewsTests;
 			productName = LoadableViewTests;
-			productReference = 9A4BB1BF1C8AE873002B1AC9 /* LoadableViewss.xctest */;
+			productReference = 9A4BB1BF1C8AE873002B1AC9 /* LoadableViewsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		9A4BB1E61C8B06C7002B1AC9 /* Example */ = {
@@ -705,7 +705,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MLSDev.LoadableViewTests;
-				PRODUCT_NAME = LoadableViewss;
+				PRODUCT_NAME = LoadableViewsTests;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvos appletvsimulator";
 			};
 			name = Debug;
@@ -722,7 +722,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MLSDev.LoadableViewTests;
-				PRODUCT_NAME = LoadableViewss;
+				PRODUCT_NAME = LoadableViewsTests;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvos appletvsimulator";
 			};
 			name = Release;
