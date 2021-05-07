@@ -899,6 +899,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MLSDev.LoadableViewTests;
 				PRODUCT_NAME = LoadableViewsTests;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx appletvos appletvsimulator";
 			};
 			name = Debug;
 		};
@@ -914,6 +915,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MLSDev.LoadableViewTests;
 				PRODUCT_NAME = LoadableViewsTests;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx appletvos appletvsimulator";
 			};
 			name = Release;
 		};
