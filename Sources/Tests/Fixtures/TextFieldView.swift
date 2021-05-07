@@ -6,6 +6,7 @@
 //  Copyright © 2018 Denys Telezhkin. All rights reserved.
 //
 
+#if canImport(UIKit)
 import UIKit
 import LoadableViews
 
@@ -20,3 +21,4 @@ import LoadableViews
         return textField.resignFirstResponder()
     }
 }
+#endif

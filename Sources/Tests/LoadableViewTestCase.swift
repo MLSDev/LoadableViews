@@ -9,6 +9,8 @@
 import XCTest
 import LoadableViews
 
+#if os(iOS)
+
 class iOSTestableView : LoadableView {
     @IBOutlet var label : UILabel!
 }
@@ -89,3 +91,19 @@ class LoadableViewSetupNibTestCase : XCTestCase {
     }
 }
 
+#endif
+
+#if canImport(AppKit)
+import AppKit
+class macOSTestableView : LoadableView {
+    @IBOutlet weak var textField: NSTextField!
+}
+
+class AppKitLoadableViewTestCase: XCTestCase {
+    func testmacOSViewLoading() {
+        let view = macOSTestableView()
+        
+        XCTAssertNotNil(view.textField)
+    }
+}
+#endif
