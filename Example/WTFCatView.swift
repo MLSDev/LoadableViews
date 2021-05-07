@@ -6,8 +6,8 @@
 //  Copyright © 2018 Denys Telezhkin. All rights reserved.
 //
 
-import UIKit
 import LoadableViews
+import UIKit
 
 @IBDesignable class WTFCatView: LoadableView {
 

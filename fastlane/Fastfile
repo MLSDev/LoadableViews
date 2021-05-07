@@ -16,6 +16,10 @@ lane :test_tvos13 do
   scan(device: "Apple TV 4K (13.3)")
 end
 
+lane :test_macos do
+  scan(destination: "arch=x86_64")
+end
+
 lane :pod_lint do
   sh "bundle exec pod repo update"
   pod_lib_lint(allow_warnings: true, verbose: true)
