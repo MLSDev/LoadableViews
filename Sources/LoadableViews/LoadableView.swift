@@ -24,7 +24,8 @@
 // THE SOFTWARE.
 
 import Foundation
-#if canImport(AppKit)
+
+#if !targetEnvironment(macCatalyst) && canImport(AppKit)
 import AppKit
 public typealias PlatformView = NSView
 #elseif canImport(UIKit)

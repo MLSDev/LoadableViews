@@ -93,7 +93,7 @@ class LoadableViewSetupNibTestCase : XCTestCase {
 
 #endif
 
-#if canImport(AppKit)
+#if !targetEnvironment(macCatalyst) && canImport(AppKit)
 import AppKit
 class macOSTestableView : LoadableView {
     @IBOutlet weak var textField: NSTextField!

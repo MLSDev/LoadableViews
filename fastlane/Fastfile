@@ -20,6 +20,10 @@ lane :test_macos do
   scan(destination: "arch=x86_64")
 end
 
+lane :test_macos_catalyst do
+  sh "xcodebuild -configuration Debug -destination 'platform=macOS,variant=Mac Catalyst' -project ../LoadableViews.xcodeproj -scheme LoadableViews"
+end
+
 lane :pod_lint do
   sh "bundle exec pod repo update"
   pod_lib_lint(allow_warnings: true, verbose: true)

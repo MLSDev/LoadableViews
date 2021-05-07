@@ -35,6 +35,16 @@ fastlane test_tvos14
 fastlane test_tvos13
 ```
 
+### test_macos
+```
+fastlane test_macos
+```
+
+### test_macos_catalyst
+```
+fastlane test_macos_catalyst
+```
+
 ### pod_lint
 ```
 fastlane pod_lint

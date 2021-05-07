@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 
 # Next
 
+### Fixed
+
+* Build issues for MacCatalyst following previous AppKit support.
+
 ## [3.6.0](https://github.com/MLSDev/LoadableViews/releases/tag/3.6.0)
 
 ### Added
