@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 
 # Next
 
+## [3.6.0](https://github.com/MLSDev/LoadableViews/releases/tag/3.6.0)
+
 ### Added
 
 * Support for macOS: loading AppKit.NSView from xib.

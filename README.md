@@ -39,6 +39,7 @@ IBInspectables automatically render themselves if your view is IBDesignable. Usu
 - [x] UICollectionViewCell - `LoadableCollectionViewCell`
 - [x] UICollectionReusableView - `LoadableCollectionReusableView`
 - [x] UITextField - `LoadableTextField`
+- [x] NSView - `LoadableView` using `AppKit`
 
 To use loading from xibs, for example for UICollectionViewCells, drop UIView instead of UICollectionViewCell in InterfaceBuilder, and follow basic setup. Then, on your storyboard, set a class of your cell, and it will be automatically updated.
 
@@ -66,7 +67,7 @@ Change view container
 
 ## Making your custom views loadable
 
-* Adopt `NibLoadableProtocol` on your custom `UIView` subclass.
+* Adopt `NibLoadableProtocol` on your custom `UIView` or `NSView` subclass.
 * Override `nibName` and `nibContainerView` properties, if necessary.
 * Call `setupNib` method in both `init(frame:)` and `init(coder:)` methods.
 
@@ -80,7 +81,8 @@ Change view container
 
 * iOS 8+
 * tvOS 9.0+
-* Swift 4.0 / 3.2
+* macOS 10.12+
+* Swift 5 / 4.0 / 3.2
 
 ## Installation
 
