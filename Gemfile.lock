@@ -230,7 +230,8 @@ GEM
       xcinvoke (~> 0.3.0)
     jmespath (1.6.2)
     json (2.6.1)
-    jwt (2.3.0)
+    jwt (2.10.3)
+      base64
     liferaft (0.0.6)
     logger (1.7.0)
     memoist (0.16.2)
